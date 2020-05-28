@@ -1,5 +1,5 @@
 /config/*
-!/config/configs.js
+!/config/config.js
 !/config/usergroups.csv
 !/config/formats.js
 /logs/*
