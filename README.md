@@ -1,4 +1,4 @@
-Pokémon Showdown
+﻿Pokémon Showdown
 ========================================================================
 
 Navigation: [Website][1] | **Server repository** | [Client repository][2] | [Dex repository][3]
@@ -59,7 +59,7 @@ Congratulations, you're done setting up Pokémon Showdown.
 
 Now, to start Pokémon Showdown, run the command:
 
-    node pokemon-showdown
+    node pokemonshowdown
 
 (If you're not on Windows, we recommend doing `./pokemon-showdown` instead.)
 
