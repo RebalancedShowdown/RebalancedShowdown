@@ -1,4 +1,6 @@
 /config/*
+!/config/configs.js
+!/config/usergroups.csv
 !/config/formats.js
 /logs/*
 /node_modules
