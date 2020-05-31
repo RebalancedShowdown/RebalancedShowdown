@@ -5,6 +5,17 @@
 
 /**@type {(FormatsData | {section: string, column?: number})[]} */
 const Formats = [
+	// Rebalanced Pokemon
+	///////////////////////////////////////////////////////////////////
+
+	{
+		section: "Rebalanced Pokemon",
+	},
+	{
+		name: "[Gen 8] Rebalanced Pokemon",
+		mod: 'gen8',
+		ruleset: ['Standard', 'Dynamax Clause'],
+	},
 
 	// Sw/Sh Singles
 	///////////////////////////////////////////////////////////////////
