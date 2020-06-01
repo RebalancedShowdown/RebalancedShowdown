@@ -1988,7 +1988,7 @@ let BattlePokedex = {
 		species: "Exeggutor",
 		types: ["Grass", "Psychic"],
 		baseStats: {hp: 95, atk: 95, def: 95, spa: 125, spd: 75, spe: 45},
-		abilities: {0: "Chlorophyll", 1: "Oblivious" H: "Harvest"},
+		abilities: {0: "Chlorophyll", 1: "Oblivious", H: "Harvest"},
 		heightm: 2,
 		weightkg: 120,
 		color: "Yellow",
