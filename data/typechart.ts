@@ -58,7 +58,7 @@ export const BattleTypeChart: {[k: string]: TypeData} = {
 			Fire: 2,
 			Flying: 0,
 			Ghost: 0,
-			Grass: 2,
+			Grass: 0,
 			Ground: 0,
 			Ice: 1,
 			Normal: 0,
