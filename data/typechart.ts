@@ -2,7 +2,7 @@ export const BattleTypeChart: {[k: string]: TypeData} = {
 	Bug: {
 		damageTaken: {
 			Bug: 0,
-			Dark: 0,
+			Dark: 1,
 			Dragon: 0,
 			Electric: 0,
 			Fairy: 0,
