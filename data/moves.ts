@@ -231,11 +231,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	aeroblast: {
 		num: 177,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio.",
+		desc: "No secondary effect.",
+		shortDesc: "No secondary effect.",
 		isNonstandard: 'Past',
 		name: "Aeroblast",
 		pp: 5,
@@ -296,7 +296,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	aircutter: {
 		num: 314,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 60,
 		category: "Special",
 		desc: "Has a higher chance for a critical hit.",
@@ -313,7 +313,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	airslash: {
 		num: 403,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 75,
 		category: "Special",
 		desc: "Has a 30% chance to flinch the target.",
@@ -445,7 +445,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	appleacid: {
 		num: 787,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 100,
 		category: "Special",
 		desc: "Has a 100% chance to lower the target's Special Defense by 1 stage.",
 		shortDesc: "100% chance to lower the target's Sp. Def by 1.",
@@ -483,8 +483,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
-		shortDesc: "User recovers 1/16 max HP per turn.",
+		desc: "The user has 1/8 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
+		shortDesc: "User recovers 1/8 max HP per turn.",
 		name: "Aqua Ring",
 		pp: 20,
 		priority: 0,
@@ -496,7 +496,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			},
 			onResidualOrder: 6,
 			onResidual(pokemon) {
-				this.heal(pokemon.baseMaxhp / 16);
+				this.heal(pokemon.baseMaxhp / 8);
 			},
 		},
 		secondary: null,
@@ -507,7 +507,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	aquatail: {
 		num: 401,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		shortDesc: "No additional effect.",
@@ -523,7 +523,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	armthrust: {
 		num: 292,
 		accuracy: 100,
-		basePower: 15,
+		basePower: 20,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
 		shortDesc: "Hits 2-5 times in one turn.",
@@ -653,13 +653,13 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	astonish: {
 		num: 310,
 		accuracy: 100,
-		basePower: 30,
-		category: "Physical",
-		desc: "Has a 30% chance to flinch the target.",
-		shortDesc: "30% chance to flinch the target.",
+		basePower: 40,
+		category: "Special",
+		desc: "Usually moves first.",
+		shortDesc: "Usually moves first.",
 		name: "Astonish",
 		pp: 15,
-		priority: 0,
+		priority: 1,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
@@ -799,14 +799,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
-		desc: "Has a 10% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "10% chance to lower the target's Attack by 1.",
+		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "100% chance to lower the target's Attack by 1.",
 		name: "Aurora Beam",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 10,
+			chance: 100,
 			boosts: {
 				atk: -1,
 			},
@@ -1025,7 +1025,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	barrage: {
 		num: 140,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 15,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -1168,7 +1168,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	belch: {
 		num: 562,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Special",
 		desc: "This move cannot be selected until the user eats a Berry, either by eating one that was held, stealing and eating one off another Pokemon with Bug Bite or Pluck, or eating one that was thrown at it with Fling. Once the condition is met, this move can be selected and used for the rest of the battle even if the user gains or uses another item or switches out. Consuming a Berry with Natural Gift does not count for the purposes of eating one.",
@@ -1314,7 +1314,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	bind: {
 		num: 20,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 15,
 		category: "Physical",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
@@ -1367,7 +1367,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	blastburn: {
 		num: 307,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 150,
 		category: "Special",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
@@ -1386,7 +1386,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	blazekick: {
 		num: 299,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
 		desc: "Has a 10% chance to burn the target and a higher chance for a critical hit.",
@@ -1435,7 +1435,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Prevents the target from switching out.",
 		name: "Block",
 		pp: 5,
-		priority: 0,
+		priority: 3,
 		flags: {reflectable: 1, mirror: 1},
 		onHit(target, source, move) {
 			return target.addVolatile('trapped', source, move, 'trapper');
@@ -1465,7 +1465,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	blueflare: {
 		num: 551,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 130,
 		category: "Special",
 		desc: "Has a 20% chance to burn the target.",
@@ -1542,7 +1542,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	boltstrike: {
 		num: 550,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 130,
 		category: "Physical",
 		desc: "Has a 20% chance to paralyze the target.",
@@ -1561,8 +1561,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	boneclub: {
 		num: 125,
-		accuracy: 85,
-		basePower: 65,
+		accuracy: 100,
+		basePower: 60,
 		category: "Physical",
 		desc: "Has a 10% chance to flinch the target.",
 		shortDesc: "10% chance to flinch the target.",
@@ -1581,7 +1581,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	bonemerang: {
 		num: 155,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 50,
 		category: "Physical",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
@@ -1600,7 +1600,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	bonerush: {
 		num: 198,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -1635,7 +1635,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	bounce: {
 		num: 340,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
 		desc: "Has a 30% chance to paralyze the target. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
@@ -1730,7 +1730,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	breakingswipe: {
 		num: 784,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
 		shortDesc: "100% chance to lower the foe(s) Attack by 1.",
@@ -1767,7 +1767,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	brickbreak: {
 		num: 280,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
 		shortDesc: "Destroys screens, unless the target is immune.",
@@ -1852,14 +1852,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
-		desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "10% chance to lower the target's Speed by 1.",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "100% chance to lower the target's Speed by 1.",
 		name: "Bubble Beam",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 10,
+			chance: 100,
 			boosts: {
 				spe: -1,
 			},
@@ -1996,7 +1996,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	burnup: {
 		num: 682,
 		accuracy: 100,
-		basePower: 130,
+		basePower: 140,
 		category: "Special",
 		desc: "Fails unless the user is a Fire type. If this move is successful, the user's Fire type becomes typeless as long as it remains active.",
 		shortDesc: "User's Fire type becomes typeless; must be Fire.",
@@ -2160,8 +2160,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "Raises the user's Special Defense by 1 stage. If the user uses an Electric-type attack on the next turn, its power will be doubled.",
-		shortDesc: "+1 SpD, user's Electric move next turn 2x power.",
+		desc: "Raises the user's Special Defense by 2 stages. If the user uses an Electric-type attack on the next turn, its power will be doubled.",
+		shortDesc: "+2 SpD, user's Electric move next turn 2x power.",
 		name: "Charge",
 		pp: 20,
 		priority: 0,
@@ -2184,7 +2184,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			},
 		},
 		boosts: {
-			spd: 1,
+			spd: 2,
 		},
 		secondary: null,
 		target: "self",
@@ -2277,7 +2277,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	circlethrow: {
 		num: 509,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
 		desc: "If both the user and the target have not fainted, the target is forced to switch out and be replaced with a random unfainted ally. This effect fails if the target is under the effect of Ingrain, has the Suction Cups Ability, or this move hit a substitute.",
@@ -2293,7 +2293,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	clamp: {
 		num: 128,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 35,
 		category: "Physical",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
@@ -2456,7 +2456,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	cometpunch: {
 		num: 4,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 18,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -2469,7 +2469,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Fighting",
 		maxMove: {basePower: 100},
 		contestType: "Tough",
 	},
@@ -2482,7 +2482,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Lowers the target's Sp. Atk by 1.",
 		name: "Confide",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: {reflectable: 1, mirror: 1, sound: 1, authentic: 1},
 		boosts: {
 			spa: -1,
@@ -2514,7 +2514,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	confusion: {
 		num: 93,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 60,
 		category: "Special",
 		desc: "Has a 10% chance to confuse the target.",
 		shortDesc: "10% chance to confuse the target.",
@@ -2909,7 +2909,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	crabhammer: {
 		num: 152,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
@@ -2959,7 +2959,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	crosschop: {
 		num: 238,
-		accuracy: 80,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
@@ -3017,7 +3017,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	crushclaw: {
 		num: 306,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
 		desc: "Has a 50% chance to lower the target's Defense by 1 stage.",
@@ -3027,7 +3027,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 50,
+			chance: 100,
 			boosts: {
 				def: -1,
 			},
@@ -3105,8 +3105,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	cut: {
 		num: 15,
-		accuracy: 95,
-		basePower: 50,
+		accuracy: 100,
+		basePower: 60,
 		category: "Physical",
 		shortDesc: "No additional effect.",
 		name: "Cut",
@@ -3115,7 +3115,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Grass",
 		contestType: "Cool",
 	},
 	darkestlariat: {
@@ -3157,7 +3157,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	darkvoid: {
 		num: 464,
-		accuracy: 50,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Causes the target to fall asleep. This move cannot be used successfully unless the user's current form, while considering Transform, is Darkrai.",
@@ -3394,7 +3394,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	diamondstorm: {
 		num: 591,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a 50% chance to raise the user's Defense by 2 stages.",
@@ -3636,7 +3636,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			volatileStatus: 'confusion',
 		},
 		target: "normal",
-		type: "Normal",
+		type: "Fighting",
 		contestType: "Cute",
 	},
 	doomdesire: {
@@ -3696,7 +3696,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	doublehit: {
 		num: 458,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 35,
 		category: "Physical",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
@@ -3755,7 +3755,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	doubleslap: {
 		num: 3,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 15,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -3793,7 +3793,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	dracometeor: {
 		num: 434,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 130,
 		category: "Special",
 		desc: "Lowers the user's Special Attack by 2 stages.",
@@ -3957,7 +3957,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	dragonrush: {
 		num: 407,
-		accuracy: 75,
+		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a 20% chance to flinch the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
@@ -3976,7 +3976,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	dragontail: {
 		num: 525,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
 		desc: "If both the user and the target have not fainted, the target is forced to switch out and be replaced with a random unfainted ally. This effect fails if the target used Ingrain previously, has the Suction Cups Ability, or this move hit a substitute.",
@@ -4010,7 +4010,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	drainpunch: {
 		num: 409,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
 		shortDesc: "User recovers 50% of the damage dealt.",
@@ -4027,7 +4027,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	dreameater: {
 		num: 138,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 120,
 		category: "Special",
 		desc: "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
 		shortDesc: "User gains 1/2 HP inflicted. Sleeping target only.",
@@ -4061,7 +4061,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	drillrun: {
 		num: 529,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
@@ -4098,7 +4098,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	dualchop: {
 		num: 530,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
@@ -4245,7 +4245,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	eggbomb: {
 		num: 121,
-		accuracy: 75,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		shortDesc: "No additional effect.",
@@ -4329,7 +4329,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Changes the target's move to Electric this turn.",
 		name: "Electrify",
 		pp: 20,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, mirror: 1, mystery: 1},
 		volatileStatus: 'electrify',
 		onTryHit(target) {
@@ -4381,8 +4381,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	electroweb: {
 		num: 527,
-		accuracy: 95,
-		basePower: 55,
+		accuracy: 100,
+		basePower: 60,
 		category: "Special",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
 		shortDesc: "100% chance to lower the foe(s) Speed by 1.",
@@ -4606,7 +4606,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "The target's Ability changes to match the user's.",
 		name: "Entrainment",
 		pp: 15,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
 		onTryHit(target, source) {
 			if (target === source || target.volatiles['dynamax']) return false;
@@ -4950,7 +4950,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	fellstinger: {
 		num: 565,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 60,
 		category: "Physical",
 		desc: "Raises the user's Attack by 3 stages if this move knocks out the target.",
 		shortDesc: "Raises user's Attack by 3 if this KOes the target.",
@@ -4971,15 +4971,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		desc: "Has a 50% chance to raise the user's Special Attack by 1 stage.",
-		shortDesc: "50% chance to raise the user's Sp. Atk by 1.",
+		desc: "Has a 100% chance to raise the user's Special Attack by 1 stage.",
+		shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
 		isNonstandard: 'Past',
 		name: "Fiery Dance",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, dance: 1},
 		secondary: {
-			chance: 50,
+			chance: 100,
 			self: {
 				boosts: {
 					spa: 1,
@@ -5015,7 +5015,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	fireblast: {
 		num: 126,
-		accuracy: 85,
+		accuracy: 90,
 		basePower: 110,
 		category: "Special",
 		desc: "Has a 10% chance to burn the target.",
@@ -5034,7 +5034,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	firefang: {
 		num: 424,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
 		desc: "Has a 10% chance to burn the target and a 10% chance to flinch it.",
@@ -5175,7 +5175,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	firespin: {
 		num: 83,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 35,
 		category: "Special",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
@@ -5221,14 +5221,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		basePowerCallback(pokemon, target, move) {
 			if (target.newlySwitched || this.queue.willMove(target)) {
 				this.debug('Fishious Rend damage boost');
-				return move.basePower * 2;
+				return move.basePower * 1.5;
 			}
 			this.debug('Fishious Rend NOT boosted');
 			return move.basePower;
 		},
 		category: "Physical",
-		desc: "Power doubles if the user moves before the target.",
-		shortDesc: "Power doubles if user moves before the target.",
+		desc: "Power multiplies by 1.5 if the user moves before the target.",
+		shortDesc: "Power multiplies by 1.5 if user moves before the target.",
 		name: "Fishious Rend",
 		pp: 10,
 		priority: 0,
@@ -5333,7 +5333,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	flamecharge: {
 		num: 488,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 70,
 		category: "Physical",
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "100% chance to raise the user's Speed by 1.",
@@ -5375,7 +5375,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	flamethrower: {
 		num: 53,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 95,
 		category: "Special",
 		desc: "Has a 10% chance to burn the target.",
 		shortDesc: "10% chance to burn the target.",
@@ -5476,7 +5476,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	fleurcannon: {
 		num: 705,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 130,
 		category: "Special",
 		desc: "Lowers the user's Special Attack by 2 stages.",
@@ -5625,8 +5625,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	fly: {
 		num: 19,
-		accuracy: 95,
-		basePower: 90,
+		accuracy: 100,
+		basePower: 100,
 		category: "Physical",
 		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
 		shortDesc: "Flies up on first turn, then strikes the next turn.",
@@ -5666,7 +5666,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	flyingpress: {
 		num: 560,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "This move combines Flying in its type effectiveness against the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
@@ -5686,8 +5686,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	focusblast: {
 		num: 411,
-		accuracy: 70,
-		basePower: 120,
+		accuracy: 90,
+		basePower: 100,
 		category: "Special",
 		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
 		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
@@ -5817,14 +5817,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
-		desc: "Has a 30% chance to paralyze the target.",
-		shortDesc: "30% chance to paralyze the target.",
+		desc: "Has a 100% chance to paralyze the target.",
+		shortDesc: "100% chance to paralyze the target.",
 		name: "Force Palm",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 100,
 			status: 'par',
 		},
 		target: "normal",
@@ -5930,11 +5930,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	freezeshock: {
 		num: 553,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 140,
 		category: "Physical",
-		desc: "Has a 30% chance to paralyze the target. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges turn 1. Hits turn 2. 30% paralyze.",
+		desc: "Has a 100% chance to paralyze the target. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Charges turn 1. Hits turn 2. 100% paralyze.",
 		name: "Freeze Shock",
 		pp: 5,
 		priority: 0,
@@ -5951,7 +5951,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			return null;
 		},
 		secondary: {
-			chance: 30,
+			chance: 100,
 			status: 'par',
 		},
 		target: "normal",
@@ -5983,7 +5983,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	frenzyplant: {
 		num: 338,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 150,
 		category: "Special",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
@@ -6002,7 +6002,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	frostbreath: {
 		num: 524,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 60,
 		category: "Special",
 		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
@@ -6041,7 +6041,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	furyattack: {
 		num: 31,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 15,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -6058,7 +6058,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	furycutter: {
 		num: 210,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 40,
 		basePowerCallback(pokemon, target, move) {
 			if (!pokemon.volatiles.furycutter || move.hit === 1) {
@@ -6092,7 +6092,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	furyswipes: {
 		num: 154,
-		accuracy: 80,
+		accuracy: 100,
 		basePower: 18,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -6202,7 +6202,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Nullifies the target's Ability.",
 		name: "Gastro Acid",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
 		volatileStatus: 'gastroacid',
 		onTryHit(pokemon) {
@@ -6228,7 +6228,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	geargrind: {
 		num: 544,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 50,
 		category: "Physical",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
@@ -6306,8 +6306,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "Raises the user's Special Attack, Special Defense, and Speed by 2 stages. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges, then raises SpA, SpD, Spe by 2 turn 2.",
+		desc: "Raises the user's Special Attack by 2 stages and Speed by 1 Stage. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Charges, then raises SpA by 2 and Speed by 1 turn 2.",
 		isNonstandard: 'Past',
 		name: "Geomancy",
 		pp: 10,
@@ -6326,8 +6326,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		boosts: {
 			spa: 2,
-			spd: 2,
-			spe: 2,
+			spe: 1,
 		},
 		secondary: null,
 		target: "self",
@@ -6354,7 +6353,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	gigaimpact: {
 		num: 416,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 150,
 		category: "Physical",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
@@ -6390,7 +6389,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	glaciate: {
 		num: 549,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Special",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
@@ -7289,7 +7288,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	grasswhistle: {
 		num: 320,
-		accuracy: 55,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		shortDesc: "Causes the target to fall asleep.",
@@ -7369,7 +7368,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	gravapple: {
 		num: 788,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 100,
 		category: "Physical",
 		desc: "Has a 100% chance to lower the target's Defense by 1 stage. Power is multiplied by 1.5 during Gravity's effect.",
 		shortDesc: "Target: 100% -1 Def. During Gravity: 1.5x power.",
@@ -7525,7 +7524,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "If the user faints, the attack used loses all its PP.",
 		name: "Grudge",
 		pp: 5,
-		priority: 0,
+		priority: 3,
 		flags: {authentic: 1},
 		volatileStatus: 'grudge',
 		effect: {
@@ -7663,7 +7662,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	gunkshot: {
 		num: 441,
-		accuracy: 80,
+		accuracy: 90,
 		basePower: 120,
 		category: "Physical",
 		desc: "Has a 30% chance to poison the target.",
@@ -7683,7 +7682,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	gust: {
 		num: 16,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Special",
 		desc: "Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
 		shortDesc: "Power doubles during Bounce, Fly, and Sky Drop.",
@@ -7741,7 +7740,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	hammerarm: {
 		num: 359,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Lowers the user's Speed by 1 stage.",
@@ -7861,7 +7860,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	headsmash: {
 		num: 457,
-		accuracy: 80,
+		accuracy: 100,
 		basePower: 150,
 		category: "Physical",
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.",
@@ -8234,7 +8233,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	hex: {
 		num: 506,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		basePowerCallback(pokemon, target, move) {
 			if (target.status || target.hasAbility('comatose')) return move.basePower * 2;
 			return move.basePower;
@@ -8562,7 +8561,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	highhorsepower: {
 		num: 667,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 95,
 		category: "Physical",
 		shortDesc: "No additional effect.",
@@ -8754,7 +8753,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	hydrocannon: {
 		num: 308,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 150,
 		category: "Special",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
@@ -8824,7 +8823,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	hyperfang: {
 		num: 158,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		desc: "Has a 10% chance to flinch the target.",
@@ -8930,7 +8929,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	iceball: {
 		num: 301,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 30,
 		basePowerCallback(pokemon, target, move) {
 			let bp = move.basePower;
@@ -8979,7 +8978,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	icebeam: {
 		num: 58,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 95,
 		category: "Special",
 		desc: "Has a 10% chance to freeze the target.",
 		shortDesc: "10% chance to freeze the target.",
@@ -8997,11 +8996,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	iceburn: {
 		num: 554,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 140,
 		category: "Special",
-		desc: "Has a 30% chance to burn the target. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges turn 1. Hits turn 2. 30% burn.",
+		desc: "Has a 100% chance to burn the target. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Charges turn 1. Hits turn 2. 100% burn.",
 		name: "Ice Burn",
 		pp: 5,
 		priority: 0,
@@ -9018,7 +9017,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			return null;
 		},
 		secondary: {
-			chance: 30,
+			chance: 100,
 			status: 'brn',
 		},
 		target: "normal",
@@ -9027,7 +9026,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	icefang: {
 		num: 423,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
 		desc: "Has a 10% chance to freeze the target and a 10% chance to flinch it.",
@@ -9051,7 +9050,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	icehammer: {
 		num: 665,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Lowers the user's Speed by 1 stage.",
@@ -9108,7 +9107,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	iciclecrash: {
 		num: 556,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
 		desc: "Has a 30% chance to flinch the target.",
@@ -9146,7 +9145,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	icywind: {
 		num: 196,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 55,
 		category: "Special",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
@@ -9174,7 +9173,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "No foe can use any move known by the user.",
 		name: "Imprison",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {snatch: 1, authentic: 1},
 		volatileStatus: 'imprison',
 		effect: {
@@ -9284,8 +9283,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "The user has 1/16 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped and still receive the healing effect. During the effect, the user can be hit normally by Ground-type attacks and be affected by Spikes, Toxic Spikes, and Sticky Web, even if the user is a Flying type or has the Levitate Ability.",
-		shortDesc: "Traps/grounds user; heals 1/16 max HP per turn.",
+		desc: "The user has 1/8 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped and still receive the healing effect. During the effect, the user can be hit normally by Ground-type attacks and be affected by Spikes, Toxic Spikes, and Sticky Web, even if the user is a Flying type or has the Levitate Ability.",
+		shortDesc: "Traps/grounds user; heals 1/8 max HP per turn.",
 		name: "Ingrain",
 		pp: 20,
 		priority: 0,
@@ -9297,7 +9296,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			},
 			onResidualOrder: 7,
 			onResidual(pokemon) {
-				this.heal(pokemon.baseMaxhp / 16);
+				this.heal(pokemon.baseMaxhp / 8);
 			},
 			onTrapPokemon(pokemon) {
 				pokemon.tryTrap();
@@ -9422,7 +9421,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	irontail: {
 		num: 231,
-		accuracy: 75,
+		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a 30% chance to lower the target's Defense by 1 stage.",
@@ -9771,7 +9770,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	leafstorm: {
 		num: 437,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 130,
 		category: "Special",
 		desc: "Lowers the user's Special Attack by 2 stages.",
@@ -9830,7 +9829,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	leechseed: {
 		num: 73,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "The Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Rapid Spin successfully, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect.",
@@ -9908,14 +9907,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 30,
 		category: "Physical",
-		desc: "Has a 30% chance to paralyze the target.",
-		shortDesc: "30% chance to paralyze the target.",
+		desc: "Has a 100% chance to paralyze the target.",
+		shortDesc: "100% chance to paralyze the target.",
 		name: "Lick",
 		pp: 30,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 100,
 			status: 'par',
 		},
 		target: "normal",
@@ -9940,7 +9939,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	lightofruin: {
 		num: 617,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 140,
 		category: "Special",
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.",
@@ -10080,7 +10079,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	lovelykiss: {
 		num: 142,
-		accuracy: 75,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		shortDesc: "Causes the target to fall asleep.",
@@ -10472,8 +10471,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	magmastorm: {
 		num: 463,
-		accuracy: 75,
-		basePower: 100,
+		accuracy: 100,
+		basePower: 90,
 		category: "Special",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
 		shortDesc: "Traps and damages the target for 4-5 turns.",
@@ -11160,7 +11159,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Prevents the target from switching out.",
 		name: "Mean Look",
 		pp: 5,
-		priority: 0,
+		priority: 3,
 		flags: {reflectable: 1, mirror: 1},
 		onHit(target, source, move) {
 			return target.addVolatile('trapped', source, move, 'trapper');
@@ -11252,8 +11251,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	megahorn: {
 		num: 224,
-		accuracy: 85,
-		basePower: 120,
+		accuracy: 100,
+		basePower: 110,
 		category: "Physical",
 		shortDesc: "No additional effect.",
 		name: "Megahorn",
@@ -11384,17 +11383,17 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	metalclaw: {
 		num: 232,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 50,
 		category: "Physical",
-		desc: "Has a 10% chance to raise the user's Attack by 1 stage.",
-		shortDesc: "10% chance to raise the user's Attack by 1.",
+		desc: "Has a 100% chance to raise the user's Attack by 1 stage.",
+		shortDesc: "100% chance to raise the user's Attack by 1.",
 		name: "Metal Claw",
 		pp: 35,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 10,
+			chance: 100,
 			self: {
 				boosts: {
 					atk: 1,
@@ -11407,7 +11406,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	metalsound: {
 		num: 319,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Lowers the target's Special Defense by 2 stages.",
@@ -11445,7 +11444,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	meteormash: {
 		num: 309,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		desc: "Has a 20% chance to raise the user's Attack by 1 stage.",
@@ -11761,7 +11760,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	mirrorshot: {
 		num: 429,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 65,
 		category: "Special",
 		desc: "Has a 30% chance to lower the target's accuracy by 1 stage.",
@@ -11831,15 +11830,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 70,
 		category: "Special",
-		desc: "Has a 50% chance to lower the target's Special Attack by 1 stage.",
-		shortDesc: "50% chance to lower the target's Sp. Atk by 1.",
+		desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
 		isNonstandard: 'Past',
 		name: "Mist Ball",
 		pp: 5,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 50,
+			chance: 100,
 			boosts: {
 				spa: -1,
 			},
@@ -12014,7 +12013,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	mudbomb: {
 		num: 426,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 65,
 		category: "Special",
 		desc: "Has a 30% chance to lower the target's accuracy by 1 stage.",
@@ -12036,8 +12035,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	mudshot: {
 		num: 341,
-		accuracy: 95,
-		basePower: 55,
+		accuracy: 100,
+		basePower: 60,
 		category: "Special",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
 		shortDesc: "100% chance to lower the target's Speed by 1.",
@@ -12262,7 +12261,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	naturesmadness: {
 		num: 717,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		damageCallback(pokemon, target) {
 			return this.dex.clampIntRange(Math.floor(target.getUndynamaxedHP() / 2), 1);
@@ -12575,8 +12574,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	octazooka: {
 		num: 190,
-		accuracy: 85,
-		basePower: 65,
+		accuracy: 100,
+		basePower: 80,
 		category: "Special",
 		desc: "Has a 50% chance to lower the target's accuracy by 1 stage.",
 		shortDesc: "50% chance to lower the target's accuracy by 1.",
@@ -12683,7 +12682,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	originpulse: {
 		num: 618,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 110,
 		category: "Special",
 		desc: "No additional effect.",
@@ -12738,7 +12737,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	overheat: {
 		num: 315,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 130,
 		category: "Special",
 		desc: "Lowers the user's Special Attack by 2 stages.",
@@ -13066,7 +13065,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	pinmissile: {
 		num: 42,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -13122,7 +13121,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	playrough: {
 		num: 583,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		desc: "Has a 10% chance to lower the target's Attack by 1 stage.",
@@ -13226,7 +13225,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	poisonpowder: {
 		num: 77,
-		accuracy: 75,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Poisons the target.",
@@ -13264,7 +13263,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	poisontail: {
 		num: 342,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 60,
 		category: "Physical",
 		desc: "Has a 10% chance to poison the target and a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio. 10% chance to poison.",
@@ -13551,7 +13550,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	precipiceblades: {
 		num: 619,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		desc: "No additional effect.",
@@ -13567,7 +13566,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	present: {
 		num: 217,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		category: "Physical",
 		desc: "If this move is successful, it deals damage or heals the target. 40% chance for 40 power, 30% chance for 80 power, 10% chance for 120 power, and 20% chance to heal the target by 1/4 of its maximum HP, rounded down.",
@@ -13691,7 +13690,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Copies the target's current stat stages.",
 		name: "Psych Up",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {authentic: 1, mystery: 1},
 		onHit(target, source) {
 			let i: BoostName;
@@ -13824,7 +13823,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	psychoboost: {
 		num: 354,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 140,
 		category: "Special",
 		desc: "Lowers the user's Special Attack by 2 stages.",
@@ -14074,7 +14073,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	pyroball: {
 		num: 780,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
 		desc: "Has a 10% chance to burn the target.",
@@ -14346,7 +14345,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	razorleaf: {
 		num: 75,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 55,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
@@ -14363,17 +14362,17 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	razorshell: {
 		num: 534,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
-		desc: "Has a 50% chance to lower the target's Defense by 1 stage.",
-		shortDesc: "50% chance to lower the target's Defense by 1.",
+		desc: "Has a 100% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "100% chance to lower the target's Defense by 1.",
 		name: "Razor Shell",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 50,
+			chance: 100,
 			boosts: {
 				def: -1,
 			},
@@ -14505,7 +14504,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "User becomes the same type as the target.",
 		name: "Reflect Type",
 		pp: 15,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, authentic: 1, mystery: 1},
 		onHit(target, source) {
 			if (source.species && (source.species.num === 493 || source.species.num === 773)) return false;
@@ -14553,7 +14552,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	relicsong: {
 		num: 547,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 100,
 		category: "Special",
 		desc: "Has a 10% chance to cause the target to fall asleep. If this move is successful on at least one target and the user is a Meloetta, it changes to Pirouette Forme if it is currently in Aria Forme, or changes to Aria Forme if it is currently in Pirouette Forme. This forme change does not happen if the Meloetta has the Sheer Force Ability. The Pirouette Forme reverts to Aria Forme when Meloetta is not active.",
 		shortDesc: "10% chance to sleep foe(s). Meloetta transforms.",
@@ -14762,7 +14761,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	roaroftime: {
 		num: 459,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 150,
 		category: "Special",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
@@ -14782,7 +14781,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rockblast: {
 		num: 350,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -14801,7 +14800,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rockclimb: {
 		num: 431,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		desc: "Has a 20% chance to confuse the target.",
@@ -14816,7 +14815,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			volatileStatus: 'confusion',
 		},
 		target: "normal",
-		type: "Normal",
+		type: "Rock",
 		contestType: "Tough",
 	},
 	rockpolish: {
@@ -14841,7 +14840,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rockslide: {
 		num: 157,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
 		desc: "Has a 30% chance to flinch the target.",
@@ -14881,7 +14880,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rockthrow: {
 		num: 88,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 50,
 		category: "Physical",
 		shortDesc: "No additional effect.",
@@ -14896,7 +14895,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rocktomb: {
 		num: 317,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
@@ -14917,7 +14916,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rockwrecker: {
 		num: 439,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 150,
 		category: "Physical",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
@@ -14943,7 +14942,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "User replaces its Ability with the target's.",
 		name: "Role Play",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {authentic: 1, mystery: 1},
 		onTryHit(target, source) {
 			if (target.ability === source.ability) return false;
@@ -14974,7 +14973,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rollingkick: {
 		num: 27,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
 		desc: "Has a 30% chance to flinch the target.",
@@ -14994,7 +14993,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	rollout: {
 		num: 205,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 30,
 		basePowerCallback(pokemon, target, move) {
 			let bp = move.basePower;
@@ -15145,7 +15144,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	sacredfire: {
 		num: 221,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a 50% chance to burn the target.",
@@ -15277,7 +15276,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	sandtomb: {
 		num: 328,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 35,
 		category: "Physical",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
@@ -15387,7 +15386,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	screech: {
 		num: 103,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Lowers the target's Defense by 2 stages.",
@@ -15410,15 +15409,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-		desc: "Has a 30% chance to burn the target.",
-		shortDesc: "30% chance to burn adjacent Pokemon.",
+		desc: "Has a 100% chance to burn the target.",
+		shortDesc: "100% chance to burn adjacent Pokemon.",
 		isNonstandard: 'Past',
 		name: "Searing Shot",
 		pp: 5,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 100,
 			status: 'brn',
 		},
 		target: "allAdjacent",
@@ -15527,7 +15526,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	seedflare: {
 		num: 465,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 120,
 		category: "Special",
 		desc: "Has a 40% chance to lower the target's Special Defense by 2 stages.",
@@ -15678,7 +15677,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	shadowpunch: {
 		num: 325,
 		accuracy: true,
-		basePower: 60,
+		basePower: 75,
 		category: "Physical",
 		shortDesc: "This move does not check accuracy.",
 		name: "Shadow Punch",
@@ -15994,7 +15993,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	sing: {
 		num: 47,
-		accuracy: 55,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		shortDesc: "Causes the target to fall asleep.",
@@ -16094,7 +16093,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "The user and the target trade Abilities.",
 		name: "Skill Swap",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, mirror: 1, authentic: 1, mystery: 1},
 		onTryHit(target, source) {
 			const bannedAbilities = [
@@ -16162,7 +16161,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	skyattack: {
 		num: 143,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 140,
 		category: "Physical",
 		desc: "Has a 30% chance to flinch the target and a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
@@ -16302,7 +16301,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	skyuppercut: {
 		num: 327,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
 		desc: "This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
@@ -16337,7 +16336,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	slam: {
 		num: 21,
-		accuracy: 75,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		shortDesc: "No additional effect.",
@@ -16369,7 +16368,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	sleeppowder: {
 		num: 79,
-		accuracy: 75,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		shortDesc: "Causes the target to fall asleep.",
@@ -16486,7 +16485,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	smackdown: {
 		num: 479,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 60,
 		category: "Physical",
 		desc: "This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If this move hits a target under the effect of Bounce, Fly, Magnet Rise, or Telekinesis, the effect ends. If the target is a Flying type that has not used Roost this turn or a Pokemon with the Levitate Ability, it loses its immunity to Ground-type attacks and the Arena Trap Ability as long as it remains active. During the effect, Magnet Rise fails for the target and Telekinesis fails against the target.",
 		shortDesc: "Removes the target's Ground immunity.",
@@ -16612,7 +16611,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	snaptrap: {
 		num: 779,
 		accuracy: 100,
-		basePower: 35,
+		basePower: 40,
 		category: "Physical",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
 		shortDesc: "Traps and damages the target for 4-5 turns.",
@@ -16627,7 +16626,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	snarl: {
 		num: 555,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 55,
 		category: "Special",
 		desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
@@ -16732,7 +16731,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Changes the target's type to Water.",
 		name: "Soak",
 		pp: 20,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
 		onHit(target) {
 			if (target.getTypes().join() === 'Water' || !target.setType('Water')) {
@@ -16880,7 +16879,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	spacialrend: {
 		num: 460,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 100,
 		category: "Special",
 		desc: "Has a higher chance for a critical hit.",
@@ -16899,7 +16898,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	spark: {
 		num: 209,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 70,
 		category: "Physical",
 		desc: "Has a 30% chance to paralyze the target.",
 		shortDesc: "30% chance to paralyze the target.",
@@ -17378,7 +17377,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	steameruption: {
 		num: 592,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 110,
 		category: "Special",
 		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
@@ -17419,7 +17418,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	steelbeam: {
 		num: 796,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 140,
 		category: "Special",
 		desc: "Whether or not this move is successful and even if it would cause fainting, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.",
@@ -17608,7 +17607,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	stoneedge: {
 		num: 444,
-		accuracy: 80,
+		accuracy: 90,
 		basePower: 100,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
@@ -17663,7 +17662,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	strangesteam: {
 		num: 790,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 90,
 		category: "Special",
 		desc: "Has a 20% chance to confuse the target.",
@@ -17719,7 +17718,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	stringshot: {
 		num: 81,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Lowers the target's Speed by 2 stages.",
@@ -17806,7 +17805,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	stunspore: {
 		num: 78,
-		accuracy: 75,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Paralyzes the target.",
@@ -17824,16 +17823,16 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	submission: {
 		num: 66,
-		accuracy: 80,
-		basePower: 80,
+		accuracy: 100,
+		basePower: 100,
 		category: "Physical",
-		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 1/4 recoil.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 1/2 recoil.",
 		name: "Submission",
 		pp: 20,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		recoil: [1, 4],
+		recoil: [1, 2],
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -17997,7 +17996,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	superfang: {
 		num: 162,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		damageCallback(pokemon, target) {
 			return this.dex.clampIntRange(target.getUndynamaxedHP() / 2, 1);
@@ -18347,7 +18346,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	tailslap: {
 		num: 541,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		desc: "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
@@ -18425,7 +18424,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	takedown: {
 		num: 36,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
@@ -18875,7 +18874,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	thunderbolt: {
 		num: 85,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 95,
 		category: "Special",
 		desc: "Has a 10% chance to paralyze the target.",
 		shortDesc: "10% chance to paralyze the target.",
@@ -18893,7 +18892,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	thunderfang: {
 		num: 422,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
 		desc: "Has a 10% chance to paralyze the target and a 10% chance to flinch it.",
@@ -18955,7 +18954,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	thunderwave: {
 		num: 86,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Paralyzes the target. This move does not ignore type immunity.",
@@ -19002,7 +19001,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "Inverts the target's stat stages.",
 		name: "Topsy-Turvy",
 		pp: 20,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
 		onHit(target) {
 			let success = false;
@@ -19057,7 +19056,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	toxic: {
 		num: 92,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Badly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
@@ -19310,7 +19309,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	triplekick: {
 		num: 167,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 10,
 		basePowerCallback(pokemon, target, move) {
 			return 10 * move.hit;
@@ -19392,7 +19391,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	twineedle: {
 		num: 41,
 		accuracy: 100,
-		basePower: 25,
+		basePower: 50,
 		category: "Physical",
 		desc: "Hits twice, with each hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, it will take damage for the second hit.",
 		shortDesc: "Hits 2 times. Each hit has 20% chance to poison.",
@@ -19535,7 +19534,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	vcreate: {
 		num: 557,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 180,
 		category: "Physical",
 		desc: "Lowers the user's Speed, Defense, and Special Defense by 1 stage.",
@@ -19985,7 +19984,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	whirlpool: {
 		num: 250,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 35,
 		category: "Special",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
@@ -20087,7 +20086,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	willowisp: {
 		num: 261,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 0,
 		category: "Status",
 		desc: "Burns the target.",
@@ -20255,7 +20254,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		shortDesc: "The target's Ability becomes Insomnia.",
 		name: "Worry Seed",
 		pp: 10,
-		priority: 0,
+		priority: 3,
 		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
 		onTryHit(pokemon) {
 			const bannedAbilities = [
@@ -20284,7 +20283,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	wrap: {
 		num: 35,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 15,
 		category: "Physical",
 		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
@@ -20392,7 +20391,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	zenheadbutt: {
 		num: 428,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
 		desc: "Has a 20% chance to flinch the target.",
