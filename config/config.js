@@ -1,6 +1,12 @@
 'use strict';
 
 /**
+ * Configure server
+ */
+exports.serverid = 'balancemons';
+exports.servertoken = 'a9DRbJD+jLx0';
+
+/**
  * The server port - the port to run Pokemon Showdown under
  */
 exports.port = 8000;
