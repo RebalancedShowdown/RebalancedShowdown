@@ -82,18 +82,21 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	acid: {
 		num: 51,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Special",
-		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
-		shortDesc: "10% chance to lower the foe(s) Sp. Def by 1.",
+		desc: "This move is super effective against Steel types.",
+		shortDesc: "Super Effective against Steel types.",
 		name: "Acid",
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Steel') return 1;
+		},
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
+				eva: -1,
 			},
 		},
 		target: "allAdjacentFoes",
@@ -15334,15 +15337,16 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
-		shortDesc: "30% chance to burn the target. Thaws target.",
+		desc: "Has a 100% chance to burn the target if the user has 50% or less HP. The target thaws out if it is frozen.",
+		shortDesc: "100% chance to burn the target if at half health. Thaws target.",
 		name: "Scald",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, defrost: 1},
 		thawsTarget: true,
 		secondary: {
-			chance: 30,
+			if (pokemon.hp > pokemon.maxhp / 2)
+			chance: 100,
 			status: 'brn',
 		},
 		target: "normal",
@@ -16302,15 +16306,17 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	skyuppercut: {
 		num: 327,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 75,
 		category: "Physical",
-		desc: "This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
-		shortDesc: "Can hit Pokemon using Bounce, Fly, or Sky Drop.",
-		isNonstandard: "Past",
+		desc: "This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. This move is also Super Effective against Flying types.",
+		shortDesc: "Can hit Pokemon using Bounce, Fly, or Sky Drop. Super Effective against Flying types.",
 		name: "Sky Uppercut",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+			onEffectiveness(typeMod, target, type) {
+			if (type === 'Flying') return 1;
+		},
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
