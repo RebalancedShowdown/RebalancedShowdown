@@ -1392,8 +1392,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 85,
 		category: "Physical",
-		desc: "Has a 10% chance to burn the target and a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio. 10% chance to burn.",
+		desc: "Has a 10% chance to lower evasidon and a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio. 10% chance to lower evasion.",
 		name: "Blaze Kick",
 		pp: 10,
 		priority: 0,
@@ -1401,8 +1401,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		critRatio: 2,
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Cool",
@@ -1412,8 +1414,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 70,
 		basePower: 110,
 		category: "Special",
-		desc: "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
-		shortDesc: "10% chance to freeze foe(s). Can't miss in hail.",
+		desc: "Has a 10% chance to lower evasion. If the weather is Hail, this move does not check accuracy.",
+		shortDesc: "10% chance to lower evasion. Can't miss in hail.",
 		name: "Blizzard",
 		pp: 5,
 		priority: 0,
@@ -1423,8 +1425,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: {
 			chance: 10,
-			status: 'frz',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "allAdjacentFoes",
 		type: "Ice",
 		contestType: "Beautiful",
@@ -1567,8 +1571,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 60,
 		category: "Physical",
-		desc: "Has a 10% chance to flinch the target.",
-		shortDesc: "10% chance to flinch the target.",
+		desc: "Has a 10% chance to lower evasion.",
+		shortDesc: "10% chance to lower evasion.",
 		isNonstandard: "Past",
 		name: "Bone Club",
 		pp: 20,
@@ -1576,8 +1580,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			volatileStatus: 'flinch',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
@@ -1843,9 +1849,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spe: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "allAdjacentFoes",
 		type: "Water",
 		contestType: "Cute",
@@ -1855,18 +1861,18 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 65,
 		category: "Special",
-		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "100% chance to lower the target's Speed by 1.",
+		desc: "Has a 10% chance to lower the target's evasion.",
+		shortDesc: "10% chance to lower the target's evasion.",
 		name: "Bubble Beam",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 100,
+			chance: 10,
 			boosts: {
-				spe: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
@@ -1912,9 +1918,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Bug",
 		contestType: "Beautiful",
@@ -2197,17 +2203,17 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	chargebeam: {
 		num: 451,
-		accuracy: 90,
-		basePower: 50,
+		accuracy: 100,
+		basePower: 60,
 		category: "Special",
-		desc: "Has a 70% chance to raise the user's Special Attack by 1 stage.",
-		shortDesc: "70% chance to raise the user's Sp. Atk by 1.",
+		desc: "Has a 100% chance to raise the user's Special Attack by 1 stage.",
+		shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
 		name: "Charge Beam",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 70,
+			chance: 100,
 			self: {
 				boosts: {
 					spa: 1,
@@ -2519,16 +2525,18 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 60,
 		category: "Special",
-		desc: "Has a 10% chance to confuse the target.",
-		shortDesc: "10% chance to confuse the target.",
+		desc: "Has a 10% chance to lower evasion.",
+		shortDesc: "10% chance to lower evasion.",
 		name: "Confusion",
 		pp: 25,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			volatileStatus: 'confusion',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
@@ -2548,9 +2556,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spe: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
@@ -2990,8 +2998,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'psn',
+			boosts: {
+				eva: -1
 		},
+	},
 		critRatio: 2,
 		target: "normal",
 		type: "Poison",
@@ -3009,11 +3019,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 20,
+			chance: 10,
 			boosts: {
-				def: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Dark",
 		contestType: "Tough",
@@ -4164,9 +4174,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Ground",
 		contestType: "Beautiful",
@@ -4446,8 +4456,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Cute",
@@ -4593,9 +4605,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Grass",
 		contestType: "Beautiful",
@@ -4708,8 +4720,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			volatileStatus: 'flinch',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Psychic",
 		contestType: "Cool",
@@ -4972,7 +4986,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	fierydance: {
 		num: 552,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 60,
 		category: "Special",
 		desc: "Has a 100% chance to raise the user's Special Attack by 1 stage.",
 		shortDesc: "100% chance to raise the user's Sp. Atk by 1.",
@@ -5029,8 +5043,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
@@ -5046,15 +5062,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
-		secondaries: [
-			{
-				chance: 10,
-				status: 'brn',
-			}, {
-				chance: 10,
-				volatileStatus: 'flinch',
-			},
-		],
+		secondary: {
+			chance: 10,
+			boosts: {
+				eva: -1
+		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Cool",
@@ -5170,8 +5183,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Tough",
@@ -5369,8 +5384,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
@@ -5388,8 +5405,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
@@ -5408,8 +5427,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		recoil: [33, 100],
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 		contestType: "Cool",
@@ -5449,9 +5470,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Steel",
 		contestType: "Beautiful",
@@ -5701,9 +5722,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fighting",
 		contestType: "Cool",
@@ -5925,8 +5946,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: {
 			chance: 10,
-			status: 'frz',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
@@ -8148,8 +8171,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "allAdjacentFoes",
 		type: "Fire",
 		contestType: "Beautiful",
@@ -8838,8 +8863,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			volatileStatus: 'flinch',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Normal",
 		contestType: "Cool",
@@ -8991,8 +9018,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'frz',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
@@ -9038,15 +9067,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
-		secondaries: [
-			{
-				chance: 10,
-				status: 'frz',
-			}, {
-				chance: 10,
-				volatileStatus: 'flinch',
-			},
-		],
+		secondary: {
+			chance: 10,
+			boosts: {
+				eva: -1
+		},
+	},
 		target: "normal",
 		type: "Ice",
 		contestType: "Cool",
@@ -9086,8 +9112,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
 			chance: 10,
-			status: 'frz',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
@@ -9434,11 +9462,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 10,
 			boosts: {
-				def: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
@@ -11396,13 +11424,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					atk: 1,
-				},
-			},
+			chance: 10,
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
@@ -13136,9 +13162,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				atk: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fairy",
 		contestType: "Cute",
@@ -13219,9 +13245,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
-			status: 'psn',
+			chance: 10,
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Poison",
 		contestType: "Tough",
@@ -13277,8 +13305,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		critRatio: 2,
 		secondary: {
 			chance: 10,
-			status: 'psn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Poison",
 		contestType: "Clever",
@@ -13370,8 +13400,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'frz',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "allAdjacentFoes",
 		type: "Ice",
 		contestType: "Beautiful",
@@ -13678,8 +13710,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			volatileStatus: 'confusion',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Psychic",
 		contestType: "Beautiful",
@@ -13731,9 +13765,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				spd: -1,
-			},
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
@@ -14087,8 +14121,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, defrost: 1, bullet: 1},
 		secondary: {
 			chance: 10,
-			status: 'brn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fire",
 	},
@@ -14557,8 +14593,8 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-		desc: "Has a 10% chance to cause the target to fall asleep. If this move is successful on at least one target and the user is a Meloetta, it changes to Pirouette Forme if it is currently in Aria Forme, or changes to Aria Forme if it is currently in Pirouette Forme. This forme change does not happen if the Meloetta has the Sheer Force Ability. The Pirouette Forme reverts to Aria Forme when Meloetta is not active.",
-		shortDesc: "10% chance to sleep foe(s). Meloetta transforms.",
+		desc: "This move becomes physical if the user's attack is higher than its special attack. If this move is successful on at least one target and the user is a Meloetta, it changes to Pirouette Forme if it is currently in Aria Forme, or changes to Aria Forme if it is currently in Pirouette Forme. This forme change does not happen if the Meloetta has the Sheer Force Ability. The Pirouette Forme reverts to Aria Forme when Meloetta is not active.",
+		shortDesc: "Changes to Physical if Attack is higher. Meloetta transforms.",
 		isNonstandard: 'Past',
 		name: "Relic Song",
 		pp: 10,
@@ -14566,7 +14602,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, sound: 1, authentic: 1},
 		secondary: {
 			chance: 10,
-			status: 'slp',
+			boosts: {
+				eva: -1
+		},
+	},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		onHit(target, pokemon, move) {
 			if (pokemon.baseSpecies.baseSpecies === 'Meloetta' && !pokemon.transformed) {
@@ -15928,8 +15969,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			volatileStatus: 'confusion',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Bug",
 		contestType: "Beautiful",
@@ -16443,9 +16486,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
-			status: 'psn',
+			chance: 10,
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Poison",
 		contestType: "Tough",
@@ -16462,9 +16507,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
-			status: 'psn',
+			chance: 10,
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Poison",
 		contestType: "Tough",
@@ -16482,8 +16529,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'psn',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "allAdjacent",
 		type: "Poison",
 		contestType: "Tough",
@@ -17456,12 +17505,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			self: {
-				boosts: {
-					def: 1,
-				},
-			},
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
@@ -17678,9 +17725,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 20,
-			volatileStatus: 'confusion',
+			chance: 10,
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Fairy",
 	},
@@ -18907,15 +18956,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
-		secondaries: [
-			{
-				chance: 10,
-				status: 'par',
-			}, {
-				chance: 10,
-				volatileStatus: 'flinch',
-			},
-		],
+		secondary: {
+			chance: 10,
+			boosts: {
+				eva: -1
+		},
+	},
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
@@ -18933,8 +18979,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
 			chance: 10,
-			status: 'par',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
@@ -18952,8 +19000,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'par',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
@@ -19178,18 +19228,11 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 20,
-			onHit(target, source) {
-				const result = this.random(3);
-				if (result === 0) {
-					target.trySetStatus('brn', source);
-				} else if (result === 1) {
-					target.trySetStatus('par', source);
-				} else {
-					target.trySetStatus('frz', source);
-				}
-			},
+			chance: 10,
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Normal",
 		contestType: "Beautiful",
@@ -19703,8 +19746,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		recoil: [33, 100],
 		secondary: {
 			chance: 10,
-			status: 'par',
+			boosts: {
+				eva: -1
 		},
+	},
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
