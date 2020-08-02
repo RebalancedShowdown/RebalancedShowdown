@@ -11545,7 +11545,7 @@ let BattlePokedex = {
 		species: "Yveltal",
 		types: ["Dark", "Flying"],
 		gender: "N",
-		baseStats: {hp: 96, atk: 121, def: 85, spa: 121, spd: 88, spe: 99},
+		baseStats: {hp: 96, atk: 116, def: 85, spa: 116, spd: 88, spe: 99},
 		abilities: {0: "Dark Aura"},
 		heightm: 5.8,
 		weightkg: 203,
