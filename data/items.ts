@@ -11,7 +11,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 674,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
 	},
 	absolite: {
@@ -26,7 +25,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 677,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Absol, this item allows it to Mega Evolve in battle.",
 	},
 	absorbbulb: {
@@ -95,7 +93,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 672,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Aerodactyl, this item allows it to Mega Evolve in battle.",
 	},
 	aggronite: {
@@ -110,7 +107,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 667,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Aggron, this item allows it to Mega Evolve in battle.",
 	},
 	aguavberry: {
@@ -182,7 +178,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 679,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Alakazam, this item allows it to Mega Evolve in battle.",
 	},
 	aloraichiumz: {
@@ -209,7 +204,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 755,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Altaria, this item allows it to Mega Evolve in battle.",
 	},
 	ampharosite: {
@@ -352,7 +346,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 668,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Banette, this item allows it to Mega Evolve in battle.",
 	},
 	beastball: {
@@ -375,7 +368,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 770,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Beedrill, this item allows it to Mega Evolve in battle.",
 	},
 	belueberry: {
@@ -519,7 +511,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 661,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
 	},
 	blazikenite: {
@@ -534,7 +525,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 664,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Blaziken, this item allows it to Mega Evolve in battle.",
 	},
 	blueorb: {
@@ -680,7 +670,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 767,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Camerupt, this item allows it to Mega Evolve in battle.",
 	},
 	cellbattery: {
@@ -729,7 +718,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 660,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Charizard, this item allows it to Mega Evolve in battle.",
 	},
 	charizarditey: {
@@ -744,7 +732,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 678,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Charizard, this item allows it to Mega Evolve in battle.",
 	},
 	chartiberry: {
@@ -1245,7 +1232,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 764,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Diancie, this item allows it to Mega Evolve in battle.",
 	},
 	diveball: {
@@ -2098,7 +2084,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 756,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Gallade, this item allows it to Mega Evolve in battle.",
 	},
 	ganlonberry: {
@@ -2133,7 +2118,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 683,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Garchomp, this item allows it to Mega Evolve in battle.",
 	},
 	gardevoirite: {
@@ -2148,7 +2132,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 657,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Gardevoir, this item allows it to Mega Evolve in battle.",
 	},
 	gengarite: {
@@ -2163,7 +2146,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 656,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Gengar, this item allows it to Mega Evolve in battle.",
 	},
 	ghostgem: {
@@ -2222,7 +2204,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 763,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Glalie, this item allows it to Mega Evolve in battle.",
 	},
 	goldbottlecap: {
@@ -2417,7 +2398,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 676,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Gyarados, this item allows it to Mega Evolve in battle.",
 	},
 	habanberry: {
@@ -2521,7 +2501,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 680,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Heracross, this item allows it to Mega Evolve in battle.",
 	},
 	hondewberry: {
@@ -2549,7 +2528,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 666,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Houndoom, this item allows it to Mega Evolve in battle.",
 	},
 	iapapaberry: {
@@ -2868,7 +2846,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 675,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
 	},
 	kingsrock: {
@@ -2953,7 +2930,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 684,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Latias, this item allows it to Mega Evolve in battle.",
 	},
 	latiosite: {
@@ -2968,7 +2944,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 685,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Latios, this item allows it to Mega Evolve in battle.",
 	},
 	laxincense: {
@@ -3152,7 +3127,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 768,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Lopunny, this item allows it to Mega Evolve in battle.",
 	},
 	loveball: {
@@ -3185,7 +3159,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 673,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Lucario, this item allows it to Mega Evolve in battle.",
 	},
 	luckypunch: {
@@ -3409,7 +3382,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 682,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Manectric, this item allows it to Mega Evolve in battle.",
 	},
 	marangaberry: {
@@ -3464,7 +3436,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 681,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Mawile, this item allows it to Mega Evolve in battle.",
 	},
 	meadowplate: {
@@ -3501,7 +3472,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 665,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Medicham, this item allows it to Mega Evolve in battle.",
 	},
 	mentalherb: {
@@ -3555,7 +3525,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 758,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Metagross, this item allows it to Mega Evolve in battle.",
 	},
 	metalcoat: {
@@ -3653,7 +3622,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 662,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
 	},
 	mewtwonitey: {
@@ -3668,7 +3636,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 663,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
 	},
 	micleberry: {
@@ -4144,7 +4111,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 762,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Pidgeot, this item allows it to Mega Evolve in battle.",
 	},
 	pikaniumz: {
@@ -4196,7 +4162,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 671,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Pinsir, this item allows it to Mega Evolve in battle.",
 	},
 	pixieplate: {
@@ -5046,7 +5011,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 754,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Sableye, this item allows it to Mega Evolve in battle.",
 	},
 	sachet: {
@@ -5129,7 +5093,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 769,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Salamence, this item allows it to Mega Evolve in battle.",
 	},
 	sceptilite: {
@@ -5144,7 +5107,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 753,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
 	},
 	scizorite: {
@@ -5159,7 +5121,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 670,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Scizor, this item allows it to Mega Evolve in battle.",
 	},
 	scopelens: {
@@ -5219,7 +5180,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 759,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Sharpedo, this item allows it to Mega Evolve in battle.",
 	},
 	shedshell: {
@@ -5405,7 +5365,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 760,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Slowbro, this item allows it to Mega Evolve in battle.",
 	},
 	smoothrock: {
@@ -5633,7 +5592,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 761,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Steelix, this item allows it to Mega Evolve in battle.",
 	},
 	steelgem: {
@@ -5775,7 +5733,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 752,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Swampert, this item allows it to Mega Evolve in battle.",
 	},
 	sweetapple: {
@@ -6978,7 +6935,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 669,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Tyranitar, this item allows it to Mega Evolve in battle.",
 	},
 	ultraball: {
