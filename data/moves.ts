@@ -15388,7 +15388,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 100,
 			onHit(target, source, move) {
-				if (source.getHealth < (source.maxhp / 2)) target.trySetStatus('brn', source, move);
+				if (source.getHealth < (source.maxhp / 2)) {
+					target.trySetStatus('brn', source, move);	
+				}
 			},
 		},
 		target: "normal",
