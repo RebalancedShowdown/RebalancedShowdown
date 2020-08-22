@@ -13,8 +13,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	venusaurmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	charmander: {
 		tier: "LC",
@@ -30,12 +29,10 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	charizardmegax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	charizardmegay: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	charizardgmax: {
 		randomDoubleBattleMoves: ["airslash", "fireblast", "focusblast", "heatwave", "protect", "tailwind"],
@@ -56,8 +53,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	blastoisemega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	caterpie: {
 		tier: "LC",
@@ -80,69 +76,55 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUber)",
 	},
 	weedle: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	kakuna: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	beedrill: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	beedrillmega: {
-		isNonstandard: "Past",
+		tier: "UU",
 	},
 	pidgey: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	pidgeotto: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	pidgeot: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	pidgeotmega: {
-		isNonstandard: "Past",
+		tier: "OU"
 	},
 	rattata: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	rattataalola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	raticate: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	raticatealola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	raticatealolatotem: {
-		isNonstandard: "Past",
+		tier: "Untiered",
 	},
 	spearow: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	fearow: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	ekans: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	arbok: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	pichu: {
 		tier: "LC",
@@ -234,50 +216,40 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	sandshrew: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	sandshrewalola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	sandslash: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	sandslashalola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	nidoranf: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	nidorina: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	nidoqueen: {
 		randomBattleMoves: ["earthpower", "icebeam", "sludgewave", "stealthrock", "toxicspikes"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["earthpower", "icebeam", "protect", "sludgebomb", "stealthrock"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	nidoranm: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	nidorino: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	nidoking: {
 		randomBattleMoves: ["earthpower", "icebeam", "sludgewave", "substitute", "superpower"],
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["earthpower", "fireblast", "icebeam", "protect", "sludgebomb", "superpower"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	cleffa: {
 		tier: "LC",
@@ -315,31 +287,25 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	igglybuff: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	jigglypuff: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	wigglytuff: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	zubat: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	golbat: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",,
 	},
 	crobat: {
 		randomBattleMoves: ["bravebird", "defog", "roost", "superfang", "taunt", "toxic", "uturn"],
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["bravebird", "defog", "roost", "superfang", "tailwind", "taunt"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	oddish: {
 		tier: "LC",
@@ -362,20 +328,16 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	paras: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	parasect: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	venonat: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	venomoth: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	diglett: {
 		tier: "LC",
@@ -432,23 +394,19 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	psyduck: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	golduck: {
 		randomBattleMoves: ["calmmind", "focusblast", "icebeam", "psyshock", "scald", "substitute"],
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["calmmind", "encore", "icebeam", "muddywater", "protect"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	mankey: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	primeape: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	growlithe: {
 		tier: "LC",
@@ -461,35 +419,28 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	poliwag: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	poliwhirl: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	poliwrath: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	politoed: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	abra: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	kadabra: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	alakazam: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	alakazammega: {
-		isNonstandard: "Past",
+		tier: "OU",
 	},
 	machop: {
 		tier: "LC",
@@ -509,48 +460,37 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUber)",
 	},
 	bellsprout: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	weepinbell: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	victreebel: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	tentacool: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	tentacruel: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "UU",
 	},
 	geodude: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	geodudealola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	graveler: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	graveleralola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	golem: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	golemalola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	ponyta: {
 		tier: "LC",
@@ -573,8 +513,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	slowpoke: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "Untiered",
 	},
 	slowpokegalar: {
 		unreleasedHidden: true,
@@ -585,33 +524,28 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["calmmind", "icebeam", "psyshock", "scald", "slackoff", "teleport"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["calmmind", "fireblast", "icebeam", "psychic", "scald", "slackoff", "trickroom"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	slowbromega: {
-		isNonstandard: "Past",
+		tier: "OU",
 	},
 	slowking: {
 		randomBattleMoves: ["dragontail", "fireblast", "icebeam", "psyshock", "scald", "slackoff", "toxic", "trickroom"],
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["fireblast", "icebeam", "nastyplot", "psychic", "scald", "slackoff", "trickroom"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	magnemite: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	magneton: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	magnezone: {
 		randomBattleMoves: ["bodypress", "flashcannon", "mirrorcoat", "thunderbolt", "voltswitch"],
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["allyswitch", "bodypress", "flashcannon", "protect", "thunderbolt", "voltswitch"],
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	farfetchd: {
 		randomBattleMoves: ["bravebird", "closecombat", "knockoff", "leafblade", "slash", "swordsdance"],
@@ -631,36 +565,28 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	doduo: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	dodrio: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	seel: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	dewgong: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	grimer: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	grimeralola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	muk: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	mukalola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	shellder: {
 		tier: "LC",
@@ -685,8 +611,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	gengarmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	gengargmax: {
 		randomBattleMoves: ["focusblast", "nastyplot", "shadowball", "sludgewave", "trick"],
@@ -706,16 +631,13 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	steelixmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	drowzee: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	hypno: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	krabby: {
 		tier: "LC",
@@ -733,36 +655,28 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUber)",
 	},
 	voltorb: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	electrode: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	exeggcute: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	exeggutor: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	exeggutoralola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	cubone: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	marowak: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	marowakalola: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	marowakalolatotem: {
 		isNonstandard: "Past",
@@ -792,12 +706,10 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	lickitung: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	lickilicky: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Untiered",
 	},
 	koffing: {
 		tier: "LC",
