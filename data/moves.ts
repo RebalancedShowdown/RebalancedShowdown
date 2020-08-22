@@ -15385,11 +15385,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, defrost: 1},
 		thawsTarget: true,
-		onTryMove(attacker, defender, move) {
-			if (attacker.health > (attacker.maxHealth / 2)):
-				defender.status: 'brn';
-			}
-		}
+		secondary: {
+			chance: 100,
+			onHit(target, source, move) {
+				if (source.getHealth < (source.maxhp / 2)) target.trySetStatus('brn', source, move);
+			},
+		},
 		target: "normal",
 		type: "Water",
 		contestType: "Tough",
