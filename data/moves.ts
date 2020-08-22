@@ -15386,9 +15386,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, defrost: 1},
 		thawsTarget: true,
 		secondary: {
-			if (pokemon.hp > pokemon.maxhp / 2)
+			if (pokemon.hp > pokemon.maxhp / 2) {
 			chance: 100,
 			status: 'brn',
+			}
 		},
 		target: "normal",
 		type: "Water",
