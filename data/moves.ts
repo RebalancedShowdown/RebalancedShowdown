@@ -15387,8 +15387,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		thawsTarget: true,
 		onTryMove(attacker, target) {
 			if (attacker.hp < attacker.maxhp / 2) {
-				status: 'brn',
-				target: "normal",
+				if (target.status == "normal") {
+					target.status == "brn";
+				},
 			},
 		},
 		
