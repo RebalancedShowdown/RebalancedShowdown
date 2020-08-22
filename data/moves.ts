@@ -15385,10 +15385,10 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, defrost: 1},
 		thawsTarget: true,
-		secondary: {
-			if (pokemon.hp > pokemon.maxhp / 2) {
-			chance: 100,
-			status: 'brn',
+		onTryMove(attacker, target) {
+			if (attacker.hp < attacker.maxhp / 2) {
+				status: 'brn'
+				target: "normal"
 			},
 		},
 		target: "normal",
