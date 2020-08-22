@@ -299,7 +299,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Untiered",
 	},
 	golbat: {
-		tier: "Untiered",,
+		tier: "Untiered",
 	},
 	crobat: {
 		randomBattleMoves: ["bravebird", "defog", "roost", "superfang", "taunt", "toxic", "uturn"],
