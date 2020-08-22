@@ -15378,17 +15378,18 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
-		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
-		shortDesc: "30% chance to burn the target. Thaws target.",
+		desc: "100% chance to burn the target if the user is below 50% HP.",
+		shortDesc: "May burn the target. Thaws target.",
 		name: "Scald",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, defrost: 1},
 		thawsTarget: true,
-		secondary: {
-			chance: 30,
-			status: 'brn',
-		},
+		onTryMove(attacker, defender, move) {
+			if (attacker.health > (attacker.maxHealth / 2)):
+				defender.status: 'brn';
+			}
+		}
 		target: "normal",
 		type: "Water",
 		contestType: "Tough",
