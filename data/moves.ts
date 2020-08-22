@@ -15389,7 +15389,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			if (pokemon.hp > pokemon.maxhp / 2) {
 			chance: 100,
 			status: 'brn',
-			}
+			},
 		},
 		target: "normal",
 		type: "Water",
