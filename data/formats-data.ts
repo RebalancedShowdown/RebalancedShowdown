@@ -36,7 +36,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	charizardgmax: {
 		randomDoubleBattleMoves: ["airslash", "fireblast", "focusblast", "heatwave", "protect", "tailwind"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	squirtle: {
@@ -72,7 +72,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["airslash", "bugbuzz", "quiverdance", "sleeppowder"],
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["hurricane", "pollenpuff", "protect", "quiverdance", "ragepowder", "sleeppowder", "tailwind"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	weedle: {
@@ -112,7 +112,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Untiered",
 	},
 	raticatealolatotem: {
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	spearow: {
 		tier: "Untiered",
@@ -131,7 +131,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	pichuspikyeared: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachu: {
 		randomBattleMoves: ["irontail", "knockoff", "surf", "voltswitch", "volttackle"],
@@ -142,27 +142,27 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	pikachucosplay: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachurockstar: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachubelle: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachupopstar: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachuphd: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachulibre: {
 		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachuoriginal: {
 		tier: "PU",
@@ -194,11 +194,11 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	pikachustarter: {
 		isNonstandard: "LGPE",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pikachugmax: {
 		randomDoubleBattleMoves: ["extremespeed", "fakeout", "knockoff", "surf", "volttackle"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	raichu: {
@@ -369,7 +369,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	meowthgmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	persian: {
@@ -456,7 +456,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	machampgmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	bellsprout: {
@@ -617,7 +617,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["focusblast", "nastyplot", "shadowball", "sludgewave", "trick"],
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["focusblast", "nastyplot", "protect", "shadowball", "sludgebomb", "thunderbolt", "willowisp"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	onix: {
@@ -651,7 +651,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	kinglergmax: {
 		randomDoubleBattleMoves: ["knockoff", "liquidation", "protect", "superpower", "xscissor"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	voltorb: {
@@ -679,7 +679,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Untiered",
 	},
 	marowakalolatotem: {
-		 
+		tier: "Illegal",
 	},
 	tyrogue: {
 		tier: "LC",
@@ -908,7 +908,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["freezedry", "icebeam", "sparklingaria", "substitute", "thunderbolt", "toxic"],
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["freezedry", "helpinghand", "hydropump", "icywind", "protect"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	ditto: {
@@ -926,7 +926,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Untiered",
 	},
 	eeveegmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	vaporeon: {
@@ -1033,7 +1033,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["bodyslam", "curse", "darkestlariat", "earthquake", "rest"],
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["bodyslam", "curse", "darkestlariat", "highhorsepower", "recycle"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	articuno: {
@@ -3169,7 +3169,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["drainpunch", "explosion", "gunkshot", "painsplit", "spikes", "toxicspikes"],
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["drainpunch", "explosion", "gunkshot", "protect", "toxicspikes"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	zorua: {
@@ -4095,7 +4095,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Untiered",
 	},
 	gumshoostotem: {
-		 
+		 tier: "Illegal",
 	},
 	grubbin: {
 		tier: "LC",
@@ -4111,8 +4111,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	vikavolttotem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	crabrawler: {
 		 
@@ -4149,8 +4148,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	ribombeetotem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	rockruff: {
 		 
@@ -4218,8 +4216,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	araquanidtotem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	fomantis: {
 		 
@@ -4230,7 +4227,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Untiered",
 	},
 	lurantistotem: {
-		 
+		tier: "Illegal",
 	},
 	morelull: {
 		tier: "LC",
@@ -4253,8 +4250,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	salazzletotem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	stufful: {
 		tier: "LC",
@@ -4491,12 +4487,10 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	mimikyutotem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	mimikyubustedtotem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	bruxish: {
 		 
@@ -4530,8 +4524,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	kommoototem: {
-		 
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	tapukoko: {
 		randomBattleMoves: ["bravebird", "closecombat", "playrough", "uturn", "wildcharge"],
@@ -4761,7 +4754,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	corviknightgmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	blipbug: {
@@ -4778,7 +4771,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	orbeetlegmax: {
 		randomDoubleBattleMoves: ["helpinghand", "hypnosis", "lightscreen", "psychic", "reflect", "stickyweb", "strugglebug"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	nickit: {
@@ -4826,7 +4819,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	drednawgmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	yamper: {
@@ -4856,7 +4849,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["overheat", "rapidspin", "spikes", "stealthrock", "stoneedge", "willowisp"],
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["fireblast", "incinerate", "protect", "stealthrock", "stoneedge", "willowisp"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	applin: {
@@ -4870,7 +4863,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	flapplegmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	appletun: {
@@ -4883,7 +4876,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	appletungmax: {
 		randomBattleMoves: ["appleacid", "dracometeor", "leechseed", "recover"],
 		randomBattleLevel: 88,
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	silicobra: {
@@ -4897,7 +4890,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	sandacondagmax: {
 		randomDoubleBattleMoves: ["coil", "glare", "highhorsepower", "protect", "stoneedge"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	cramorant: {
@@ -4934,12 +4927,12 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	toxtricitygmax: {
 		randomDoubleBattleMoves: ["boomburst", "overdrive", "shiftgear", "sludgebomb", "snarl", "voltswitch"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	toxtricitylowkeygmax: {
 		randomDoubleBattleMoves: ["boomburst", "overdrive", "sludgebomb", "snarl", "voltswitch"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	sizzlipede: {
@@ -4954,7 +4947,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	centiskorchgmax: {
 		randomDoubleBattleMoves: ["coil", "firelash", "knockoff", "leechlife", "powerwhip", "protect"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	clobbopus: {
@@ -5001,7 +4994,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["calmmind", "darkpulse", "dazzlinggleam", "mysticalfire", "psychic", "trickroom"],
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["dazzlinggleam", "mysticalfire", "protect", "psychic", "trickroom"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	impidimp: {
@@ -5020,7 +5013,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["bulkup", "darkestlariat", "playrough", "substitute", "suckerpunch", "trick"],
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["darkestlariat", "fakeout", "lightscreen", "reflect", "spiritbreak", "taunt", "thunderwave"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	milcery: {
@@ -5034,7 +5027,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["calmmind", "dazzlinggleam", "mysticalfire", "psychic", "recover"],
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["dazzlinggleam", "decorate", "mysticalfire", "protect", "recover"],
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	falinks: {
@@ -5109,7 +5102,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	copperajahgmax: {
 		randomBattleMoves: ["earthquake", "heatcrash", "heavyslam", "powerwhip", "stoneedge"],
 		randomBattleLevel: 84,
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	dracozolt: {
@@ -5152,7 +5145,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	duraludongmax: {
-		tier: "(Uber)",
+		tier: "Illegal",
 		doublesTier: "(DUber)",
 	},
 	dreepy: {
@@ -5179,7 +5172,7 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["behemothblade", "closecombat", "crunch", "playrough", "psychicfangs", "swordsdance"],
 		randomBattleLevel: 72,
 		randomDoubleBattleMoves: ["behemothblade", "closecombat", "playrough", "protect", "psychicfangs", "swordsdance"],
-		tier: "Uber",
+		tier: "Illegal",
 		doublesTier: "DUber",
 	},
 	zamazenta: {
@@ -5193,19 +5186,19 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["behemothbash", "closecombat", "crunch", "psychicfangs"],
 		randomBattleLevel: 72,
 		randomDoubleBattleMoves: ["behemothbash", "closecombat", "crunch", "playrough", "protect", "psychicfangs"],
-		tier: "Uber",
+		tier: "Illegal",
 		doublesTier: "DUber",
 	},
 	eternatus: {
 		randomBattleMoves: ["dynamaxcannon", "flamethrower", "recover", "sludgewave", "toxic"],
 		randomBattleLevel: 72,
 		randomDoubleBattleMoves: ["cosmicpower", "dynamaxcannon", "flamethrower", "recover"],
-		tier: "Uber",
+		tier: "Illegal",
 		doublesTier: "DUber",
 	},
 	eternatuseternamax: {
 		isNonstandard: "Unobtainable",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	missingno: {
 		isNonstandard: "Custom",
@@ -5433,78 +5426,78 @@ export const BattleFormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	pokestarsmeargle: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarufo: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarufo2: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarbrycenman: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarmt: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarmt2: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestartransport: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestargiant: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestargiant2: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarhumanoid: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarmonster: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarf00: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarf002: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarspirit: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarblackdoor: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarwhitedoor: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarblackbelt: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestargiantpropo2: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 	pokestarufopropu2: {
 		isNonstandard: "Custom",
-		tier: "Untiered",
+		tier: "Illegal",
 	},
 };
