@@ -224,7 +224,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 658,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by an Ampharos, this item allows it to Mega Evolve in battle.",
 	},
 	apicotberry: {
@@ -7036,7 +7035,6 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		num: 659,
 		gen: 6,
-		isNonstandard: "Past",
 		desc: "If held by a Venusaur, this item allows it to Mega Evolve in battle.",
 	},
 	wacanberry: {
