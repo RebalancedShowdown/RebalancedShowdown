@@ -96,7 +96,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1,
+				evasion: -1,
 			},
 		},
 		target: "allAdjacentFoes",
@@ -1402,7 +1402,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -1426,7 +1426,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "allAdjacentFoes",
@@ -1581,7 +1581,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -1849,7 +1849,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "allAdjacentFoes",
@@ -1870,7 +1870,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -1918,7 +1918,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -2534,7 +2534,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -2556,7 +2556,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -2999,7 +2999,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		critRatio: 2,
@@ -3021,9 +3021,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
+			},
 		},
-	},
 		target: "normal",
 		type: "Dark",
 		contestType: "Tough",
@@ -4174,7 +4174,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -4457,7 +4457,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -4605,7 +4605,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -4721,7 +4721,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5044,7 +5044,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5065,7 +5065,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5184,7 +5184,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5385,7 +5385,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5406,7 +5406,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5428,7 +5428,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5470,7 +5470,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5722,7 +5722,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -5947,7 +5947,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -8172,7 +8172,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "allAdjacentFoes",
@@ -8864,7 +8864,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -9019,7 +9019,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -9070,7 +9070,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -9113,7 +9113,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -9464,7 +9464,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -11426,7 +11426,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -13162,7 +13162,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -13247,7 +13247,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -13306,7 +13306,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -13401,7 +13401,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "allAdjacentFoes",
@@ -13711,7 +13711,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -13765,7 +13765,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -14122,7 +14122,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -14603,7 +14603,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		onModifyMove(move, pokemon) {
@@ -15973,7 +15973,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -16491,7 +16491,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -16512,7 +16512,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -16533,7 +16533,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "allAdjacent",
@@ -17509,7 +17509,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -17730,7 +17730,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -18962,7 +18962,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -18983,7 +18983,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -19004,7 +19004,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -19233,7 +19233,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
@@ -19750,7 +19750,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 10,
 			boosts: {
-				eva: -1
+				evasion: -1
 		},
 	},
 		target: "normal",
