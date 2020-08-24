@@ -15,7 +15,7 @@ const Formats = [
 		name: "[Gen 8] Rebalanced Pokemon",
 		mod: 'gen8',
 		//ruleset: ['Standard', 'Dynamax Clause'],
-		ruleset: ['Dynamax Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+		ruleset: ['Dynamax Clause', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause', 'Sleep Clause Mod'],
 	},
 
 	// Sw/Sh Singles
