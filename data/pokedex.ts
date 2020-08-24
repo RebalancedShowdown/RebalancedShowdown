@@ -6033,7 +6033,7 @@ let BattlePokedex = {
 		forme: "Mega",
 		formeLetter: "M",
 		types: ["Dragon", "Flying"],
-		baseStats: {hp: 95, atk: 135, def: 130, spa: 120, spd: 90, spe: 120},
+		baseStats: {hp: 95, atk: 135, def: 100, spa: 120, spd: 80, spe: 120},
 		abilities: {0: "Aerilate"},
 		heightm: 1.8,
 		weightkg: 112.6,
