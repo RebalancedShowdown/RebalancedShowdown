@@ -14,7 +14,8 @@ const Formats = [
 	{
 		name: "[Gen 8] Rebalanced Pokemon",
 		mod: 'gen8',
-		ruleset: ['Standard', 'Dynamax Clause'],
+		//ruleset: ['Standard', 'Dynamax Clause'],
+		ruleset: ['Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
 	},
 
 	// Sw/Sh Singles
@@ -169,7 +170,7 @@ const Formats = [
 
 		mod: 'gen8',
 		searchShow: false,
-		ruleset: ['Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+		ruleset: ['Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
 	},
 	{
 		name: "[Gen 8] ZU",
