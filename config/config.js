@@ -373,6 +373,7 @@ exports.autolockdown = true;
  */
 exports.customavatars = {
 	// 'userid': 'customavatar.png'
+	'accidental': 'accidental.png',
 };
 
 /**
