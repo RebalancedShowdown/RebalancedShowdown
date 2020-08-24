@@ -534,6 +534,7 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 				const move = source.lastMove;
 				const ppDeducted = source.deductPP(move.id, 64);
 				if (!ppDeducted) return false;
+				this.add('-activate', target, 'ability: Cursed Body');
 			}
 		},
 		name: "Cursed Body",
