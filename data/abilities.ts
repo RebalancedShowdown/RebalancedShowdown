@@ -527,14 +527,13 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		num: 238,
 	},
 	cursedbody: {
-		desc: "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled.",
-		shortDesc: "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled.",
+		desc: "If this Pokemon is fainted by an attack that makes contact, the attacker's last move is drained of its PP.",
+		shortDesc: "If this Pokemon is fainted by a contact attack, the attacker's last move loses all PP.",
 		onDamagingHit(damage, target, source, move) {
-			if (source.volatiles['disable']) return;
-			if (!move.isFutureMove) {
-				if (this.randomChance(3, 10)) {
-					source.addVolatile('disable', this.effectData.target);
-				}
+			if (move.flags['contact'] && !target.hp) {
+				const move = source.lastMove;
+				const ppDeducted = source.deductPP(move.id, 64);
+				if (!ppDeducted) return false;
 			}
 		},
 		name: "Cursed Body",
