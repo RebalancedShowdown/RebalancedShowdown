@@ -79,7 +79,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		type: "Rock",
 		contestType: "Cool",
 	},
-	acid: {
+acid: {
 		num: 51,
 		accuracy: 100,
 		basePower: 40,
@@ -90,9 +90,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onTry(pokemon, target) {
-			if (target.hasType('Steel')) this.ignoreImmunity['Poison'] = true;
-		},
 		target: "allAdjacentFoes",
 		type: "Poison",
 		contestType: "Clever",
