@@ -82,24 +82,18 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	acid: {
 		num: 51,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 40,
 		category: "Special",
-		desc: "This move is super effective against Steel types.",
-		shortDesc: "Super Effective against Steel types.",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "10% chance to lower the foe(s) Sp. Def by 1.",
 		name: "Acid",
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onModifyMove(move) {
-			this.ignoreImmunity['Poison'] = true;
-		},
-		onEffectiveness(typeMod, target, type) {
-			if (type === 'Steel') return 1;
-		},
 		secondary: {
 			chance: 10,
 			boosts: {
-				evasion: -1,
+				spd: -1,
 			},
 		},
 		target: "allAdjacentFoes",
