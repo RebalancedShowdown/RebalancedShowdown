@@ -32,12 +32,9 @@ export const BattleStatuses: {[k: string]: PureEffectData} = {
 				return this.chainModify(0.5);
 			}
 		},
-		onBeforeMovePriority: 1,
-		onBeforeMove(pokemon) {
-			if (this.randomChance(1, 4)) {
-				this.add('cant', pokemon, 'par');
-				return false;
-			}
+		onModifyAccuracyPriority: 8,
+		onModifyAccuracy(accuracy) {
+			return accuracy * 2.0;
 		},
 	},
 	slp: {
@@ -51,9 +48,8 @@ export const BattleStatuses: {[k: string]: PureEffectData} = {
 			} else {
 				this.add('-status', target, 'slp');
 			}
-			// 1-3 turns
-			this.effectData.startTime = this.random(2, 5);
-			this.effectData.time = this.effectData.startTime;
+			// 2 turns
+			this.effectData.time = 3;
 		},
 		onBeforeMovePriority: 10,
 		onBeforeMove(pokemon, target, move) {
@@ -88,12 +84,9 @@ export const BattleStatuses: {[k: string]: PureEffectData} = {
 		onBeforeMovePriority: 10,
 		onBeforeMove(pokemon, target, move) {
 			if (move.flags['defrost']) return;
-			if (this.randomChance(1, 5)) {
-				pokemon.cureStatus();
-				return;
+			pokemon.cureStatus();
+			return;
 			}
-			this.add('cant', pokemon, 'frz');
-			return false;
 		},
 		onModifyMove(move, pokemon) {
 			if (move.flags['defrost']) {
