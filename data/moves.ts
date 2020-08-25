@@ -98,6 +98,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 				if (target.hasType('Steel')) return 1;
 			}
 		},
+		ignoreImmunity: {'Poison': true},
 		target: "allAdjacentFoes",
 		type: "Poison",
 		contestType: "Clever",
