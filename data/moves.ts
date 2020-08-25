@@ -90,11 +90,13 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 10,
-			boosts: {
-				spd: -1,
-			},
+		onTry(pokemon, target) {
+			if (!target.hasType('Steel')) {
+				this.ignoreImmunity['Poison'] = true,
+				onEffectiveness(typeMod, target, type) {
+					if (type === 'Steel')  return 1;
+				},
+			},	
 		},
 		target: "allAdjacentFoes",
 		type: "Poison",
