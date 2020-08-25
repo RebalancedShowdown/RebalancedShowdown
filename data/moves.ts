@@ -79,7 +79,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		type: "Rock",
 		contestType: "Cool",
 	},
-acid: {
+	acid: {
 		num: 51,
 		accuracy: 100,
 		basePower: 40,
@@ -90,6 +90,14 @@ acid: {
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			if (move.type !== 'Poison') return;
+			if (!target) return; // avoid crashing when called from a chat plugin
+			// ignore effectiveness if the target is Flying type and immune to Ground
+			if (!target.runImmunity('Poison')) {
+				if (target.hasType('Steel')) return 1;
+			}
+		},
 		target: "allAdjacentFoes",
 		type: "Poison",
 		contestType: "Clever",
