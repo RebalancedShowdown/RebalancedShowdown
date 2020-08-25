@@ -86,7 +86,6 @@ export const BattleStatuses: {[k: string]: PureEffectData} = {
 			if (move.flags['defrost']) return;
 			pokemon.cureStatus();
 			return;
-			}
 		},
 		onModifyMove(move, pokemon) {
 			if (move.flags['defrost']) {
