@@ -297,7 +297,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Psychic",
-		zMove: {effect: 'cleareiveboost'},
+		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Cool",
 	},
 	aircutter: {
