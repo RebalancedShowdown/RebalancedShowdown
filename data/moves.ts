@@ -92,7 +92,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		onTry(pokemon, target) {
 			if (!target.hasType('Steel')) {
-				this.ignoreImmunity['Poison'] = true,
+				this.ignoreImmunity['Poison'] = true;
 				onEffectiveness(typeMod, target, type) {
 					if (type === 'Steel')  return 1;
 				},
