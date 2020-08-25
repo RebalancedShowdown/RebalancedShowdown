@@ -90,6 +90,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 30,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		this.ignoreImmunity['Poison'] = true;
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Steel') return 1;
 		},
@@ -294,7 +295,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "self",
 		type: "Psychic",
-		zMove: {effect: 'clearnegativeboost'},
+		zMove: {effect: 'cleareiveboost'},
 		contestType: "Cool",
 	},
 	aircutter: {
