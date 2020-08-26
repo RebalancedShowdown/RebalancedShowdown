@@ -20443,15 +20443,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
+		onModifyMove(move, pokemon, target) {
+			if (this.field.isTerrain('electricterrain')) {
+				move.accuracy = true;
+			},
+		},
 		secondary: {
 			chance: 100,
 			status: 'par',
-		},
-		onAccuracyPriority: -1,
-		onAccuracy(accuracy, target, source, move) {
-			if (this.field.isTerrain('electricterrain')) {
-				accuracy: true;
-			},
 		},
 		target: "normal",
 		type: "Electric",
