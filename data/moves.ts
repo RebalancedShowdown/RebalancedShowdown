@@ -10578,32 +10578,29 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		desc: "For 5 turns, the user is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, Thousand Arrows, and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effects of Ingrain, Smack Down, or Thousand Arrows.",
-		shortDesc: "For 5 turns, the user has immunity to Ground.",
+		desc: "For 5 turns, Steel and Electric types are immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability as long as it remains active. If the user uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, Thousand Arrows, and Iron Ball override this move if the user is under any of their effects. Fails if the user is already under this effect or the effects of Ingrain, Smack Down, or Thousand Arrows.",
+		shortDesc: "For 5 turns, Steel and Electric types have immunity to Ground.",
 		name: "Magnet Rise",
 		pp: 10,
 		priority: 0,
 		flags: {snatch: 1, gravity: 1},
-		volatileStatus: 'magnetrise',
+		pseudoWeather: 'magnetrise',
 		effect: {
 			duration: 5,
-			onStart(target) {
-				if (target.volatiles['smackdown'] || target.volatiles['ingrain']) return false;
-				this.add('-start', target, 'Magnet Rise');
+			onStart(source) {
+				this.add('-fieldstart', 'move: Magnet Rise', '[of]' + source);
 			},
-			onImmunity(type) {
-				if (type === 'Ground') return false;
+			onImmunity(type, pokemon) {
+				if (!pokemon.hasType('Steel') || !pokemon.hasType('Electric') return;
+				if (move.type === 'Ground') {
+					if (type === 'Ground') return false;
+				}
 			},
 			onResidualOrder: 15,
 			onEnd(target) {
-				this.add('-end', target, 'Magnet Rise');
+				this.add('-end', 'move: Magnet Rise');
 			},
 		},
-		secondary: null,
-		target: "self",
-		type: "Electric",
-		zMove: {boost: {evasion: 1}},
-		contestType: "Clever",
 	},
 	magnitude: {
 		num: 222,
