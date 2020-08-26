@@ -20450,7 +20450,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		onAccuracyPriority: -1,
 		onAccuracy(accuracy, target, source, move) {
 			if (this.field.isTerrain('electricterrain')) {
-				accuracy: true,
+				accuracy: true;
 			},
 		},
 		target: "normal",
