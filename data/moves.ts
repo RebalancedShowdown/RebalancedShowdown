@@ -20124,6 +20124,375 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			},
 		},
 		secondary: null,
-		target: 
+		target: "allySide",
+		type: "Rock",
+		zMove: {boost: {def: 1}},
+		contestType: "Tough",
 	},
+	wildcharge: {
+		num: 528,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 1/4 recoil.",
+		name: "Wild Charge",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [1, 4],
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Tough",
+	},
+	willowisp: {
+		num: 261,
+		accuracy: 85,
+		basePower: 0,
+		category: "Status",
+		desc: "Burns the target.",
+		shortDesc: "Burns the target.",
+		name: "Will-O-Wisp",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'brn',
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+		zMove: {boost: {atk: 1}},
+		contestType: "Beautiful",
+	},
+	wingattack: {
+		num: 17,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		shortDesc: "No additional effect.",
+		name: "Wing Attack",
+		pp: 35,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		secondary: null,
+		target: "any",
+		type: "Flying",
+		contestType: "Cool",
+	},
+	wish: {
+		num: 273,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "At the end of the next turn, the Pokemon at the user's position has 1/2 of the user's maximum HP restored to it, rounded half up. Fails if this move is already in effect for the user's position.",
+		shortDesc: "Next turn, 50% of the user's max HP is restored.",
+		name: "Wish",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		slotCondition: 'Wish',
+		condition: {
+			duration: 2,
+			onStart(pokemon, source) {
+				this.effectData.hp = source.maxhp / 2;
+			},
+			onResidualOrder: 4,
+			onEnd(target) {
+				if (target && !target.fainted) {
+					const damage = this.heal(this.effectData.hp, target, target);
+					if (damage) this.add('-heal', target, target.getHealth, '[from] move: Wish', '[wisher] ' + this.effectData.source.name);
+				}
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {boost: {spd: 1}},
+		contestType: "Cute",
+	},
+	withdraw: {
+		num: 110,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Defense by 1 stage.",
+		shortDesc: "Raises the user's Defense by 1.",
+		name: "Withdraw",
+		pp: 40,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			def: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Water",
+		zMove: {boost: {def: 1}},
+		contestType: "Cute",
+	},
+	wonderroom: {
+		num: 472,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "For 5 turns, all active Pokemon have their Defense and Special Defense stats swapped. Stat stage changes are unaffected. If this move is used during the effect, the effect ends.",
+		shortDesc: "For 5 turns, all Defense and Sp. Def stats switch.",
+		name: "Wonder Room",
+		pp: 10,
+		priority: 0,
+		flags: {mirror: 1},
+		pseudoWeather: 'wonderroom',
+		condition: {
+			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasAbility('persistent')) {
+					this.add('-activate', source, 'ability: Persistent', effect);
+					return 7;
+				}
+				return 5;
+			},
+			onStart(side, source) {
+				this.add('-fieldstart', 'move: Wonder Room', '[of] ' + source);
+			},
+			onRestart(target, source) {
+				this.field.removePseudoWeather('wonderroom');
+			},
+			// Swapping defenses implemented in sim/pokemon.js:Pokemon#calculateStat and Pokemon#getStat
+			onResidualOrder: 24,
+			onEnd() {
+				this.add('-fieldend', 'move: Wonder Room');
+			},
+		},
+		secondary: null,
+		target: "all",
+		type: "Psychic",
+		zMove: {boost: {spd: 1}},
+		contestType: "Clever",
+	},
+	woodhammer: {
+		num: 452,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil.",
+		name: "Wood Hammer",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [33, 100],
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Tough",
+	},
+	workup: {
+		num: 526,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Attack and Special Attack by 1 stage.",
+		shortDesc: "Raises the user's Attack and Sp. Atk by 1.",
+		name: "Work Up",
+		pp: 30,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			atk: 1,
+			spa: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {boost: {atk: 1}},
+		contestType: "Tough",
+	},
+	worryseed: {
+		num: 388,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		desc: "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode.",
+		shortDesc: "The target's Ability becomes Insomnia.",
+		name: "Worry Seed",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
+		onTryHit(pokemon) {
+			const bannedAbilities = [
+				'battlebond', 'comatose', 'disguise', 'insomnia', 'multitype', 'powerconstruct', 'rkssystem', 'schooling', 'shieldsdown', 'stancechange', 'truant', 'zenmode',
+			];
+			if (bannedAbilities.includes(pokemon.ability)) {
+				return false;
+			}
+		},
+		onHit(pokemon) {
+			const oldAbility = pokemon.setAbility('insomnia');
+			if (oldAbility) {
+				this.add('-ability', pokemon, 'Insomnia', '[from] move: Worry Seed');
+				if (pokemon.status === 'slp') {
+					pokemon.cureStatus();
+				}
+				return;
+			}
+			return false;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
+	wrap: {
+		num: 35,
+		accuracy: 90,
+		basePower: 15,
+		category: "Physical",
+		desc: "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+		name: "Wrap",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Tough",
+	},
+	wringout: {
+		num: 378,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			return Math.floor(Math.floor((120 * (100 * Math.floor(target.hp * 4096 / target.maxhp)) + 2048 - 1) / 4096) / 100) || 1;
+		},
+		category: "Special",
+		desc: "Power is equal to 120 * (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
+		shortDesc: "More power the more HP the target has left.",
+		isNonstandard: "Past",
+		name: "Wring Out",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		zMove: {basePower: 190},
+		maxMove: {basePower: 140},
+		contestType: "Tough",
+	},
+	xscissor: {
+		num: 404,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		shortDesc: "No additional effect.",
+		name: "X-Scissor",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Bug",
+		contestType: "Cool",
+	},
+	yawn: {
+		num: 281,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Causes the target to fall asleep at the end of the next turn. Fails when used if the target cannot fall asleep or if it already has a major status condition. At the end of the next turn, if the target is still active, does not have a major status condition, and can fall asleep, it falls asleep. If the target becomes affected, this effect cannot be prevented by Safeguard or a substitute, or by falling asleep and waking up during the effect.",
+		shortDesc: "Puts the target to sleep after 1 turn.",
+		name: "Yawn",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'yawn',
+		onTryHit(target) {
+			if (target.status || !target.runStatusImmunity('slp')) {
+				return false;
+			}
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			duration: 2,
+			onStart(target, source) {
+				this.add('-start', target, 'move: Yawn', '[of] ' + source);
+			},
+			onResidualOrder: 19,
+			onEnd(target) {
+				this.add('-end', target, 'move: Yawn', '[silent]');
+				target.trySetStatus('slp', this.effectData.source);
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		zMove: {boost: {spe: 1}},
+		contestType: "Cute",
+	},
+	zapcannon: {
+		num: 192,
+		accuracy: 50,
+		basePower: 120,
+		category: "Special",
+		desc: "Has a 100% chance to paralyze the target.",
+		shortDesc: "100% chance to paralyze the target.",
+		name: "Zap Cannon",
+		pp: 5,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			status: 'par',
+		},
+		onAccuracyPriority: -1,
+		onAccuracy(accuracy, target, source, move) {
+			if (this.field.isTerrain('electricterrain')) {
+				accuracy: true,
+			},
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},
+	zenheadbutt: {
+		num: 428,
+		accuracy: 90,
+		basePower: 80,
+		category: "Physical",
+		desc: "Has a 20% chance to flinch the target.",
+		shortDesc: "20% chance to flinch the target.",
+		name: "Zen Headbutt",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	zingzap: {
+		num: 716,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		desc: "Has a 30% chance to flinch the target.",
+		shortDesc: "30% chance to flinch the target.",
+		name: "Zing Zap",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},				 
 };
