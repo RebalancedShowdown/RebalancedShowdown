@@ -2672,22 +2672,12 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		num: 182,
 	},
 	plus: {
-		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-		shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
-		onModifySpAPriority: 5,
-		onModifySpA(spa, pokemon) {
-			if (pokemon.side.active.length === 1) {
-				return;
-			}
-			for (const allyActive of pokemon.side.active) {
-				if (
-					allyActive && allyActive.position !== pokemon.position &&
-					!allyActive.fainted && allyActive.hasAbility(['minus', 'plus'])
-				) {
-					return this.chainModify(1.5);
-				}
-			}
+		desc: "On switch-in, this Pokemon sets Magnet Rise for 5 turns.",
+		shortDesc: "On switch-in, this Pokemon sets Magnet Rise for 5 turns.",
+		onStart(source) {
+			this.field.addPseudoWeather('magnetrise');
 		},
+		
 		name: "Plus",
 		rating: 0,
 		num: 57,
