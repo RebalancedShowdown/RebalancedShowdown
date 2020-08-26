@@ -20446,7 +20446,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		onModifyMove(move, pokemon, target) {
 			if (this.field.isTerrain('electricterrain')) {
 				move.accuracy = true;
-			},
+			}
 		},
 		secondary: {
 			chance: 100,
