@@ -20125,3 +20125,5 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: 
+	},
+};
