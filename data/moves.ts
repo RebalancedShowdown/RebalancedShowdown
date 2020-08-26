@@ -10591,7 +10591,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 				this.add('-fieldstart', 'move: Magnet Rise', '[of]' + source);
 			},
 			onImmunity(type, pokemon) {
-				if (!pokemon.hasType('Steel') || !pokemon.hasType('Electric') return;
+				if (!pokemon.hasType('Steel') || !pokemon.hasType('Electric')) return;
 				if (move.type === 'Ground') {
 					if (type === 'Ground') return false;
 				}
