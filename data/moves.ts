@@ -3169,7 +3169,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		secondary: {
 			chance: 20,
 			boosts: {
-				evasion: -1;
+				evasion: -1
 			},
 		},
 		target: "any",
