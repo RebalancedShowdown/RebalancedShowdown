@@ -2047,8 +2047,12 @@ export class Battle {
 		const moveHit = target.getMoveHitData(move);
 		moveHit.crit = move.willCrit || false;
 		if (move.willCrit === undefined) {
-			if (critRatio) {
+			if (critRatio >= 2) {
+				critRatio = critRatio + 2;
 				moveHit.crit = this.randomChance(1, critMult[critRatio]);
+			}
+			else {
+				moveHit.crit = false;
 			}
 		}
 
