@@ -1349,7 +1349,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Dark",
@@ -3166,7 +3168,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, pulse: 1, mirror: 1, distance: 1},
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1;
+			},
 		},
 		target: "any",
 		type: "Dark",
@@ -7868,7 +7872,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Normal",
@@ -8085,7 +8091,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Psychic",
@@ -9157,7 +9165,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Ice",
@@ -9452,7 +9462,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Steel",
@@ -12327,7 +12339,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Grass",
@@ -14900,7 +14914,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "allAdjacentFoes",
 		type: "Rock",
@@ -15034,7 +15050,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Fighting",
@@ -16239,7 +16257,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "any",
 		type: "Flying",
@@ -16779,7 +16799,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Normal",
@@ -17473,7 +17495,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Bug",
@@ -17640,7 +17664,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Normal",
@@ -19497,7 +19523,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "allAdjacentFoes",
 		type: "Dragon",
@@ -19799,7 +19827,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Water",
@@ -20466,7 +20496,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Psychic",
@@ -20485,7 +20517,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			volatileStatus: 'flinch',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Electric",
