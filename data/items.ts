@@ -4,7 +4,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 575,
 		megaStone: "Abomasnow-Mega",
 		megaEvolves: "Abomasnow",
-		itemUser: ["Abomasnow"],
+		itemUser: ["Abomasnow", "abomasnow"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -18,7 +18,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 576,
 		megaStone: "Absol-Mega",
 		megaEvolves: "Absol",
-		itemUser: ["Absol"],
+		itemUser: ["Absol", "absol"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -86,7 +86,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 577,
 		megaStone: "Aerodactyl-Mega",
 		megaEvolves: "Aerodactyl",
-		itemUser: ["Aerodactyl"],
+		itemUser: ["Aerodactyl", "aerodactyl"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -100,7 +100,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 578,
 		megaStone: "Aggron-Mega",
 		megaEvolves: "Aggron",
-		itemUser: ["Aggron"],
+		itemUser: ["Aggron", "aggron"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -171,7 +171,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 579,
 		megaStone: "Alakazam-Mega",
 		megaEvolves: "Alakazam",
-		itemUser: ["Alakazam"],
+		itemUser: ["Alakazam", "alakazam"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -197,7 +197,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 615,
 		megaStone: "Altaria-Mega",
 		megaEvolves: "Altaria",
-		itemUser: ["Altaria"],
+		itemUser: ["Altaria", "altaria"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -211,7 +211,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 580,
 		megaStone: "Ampharos-Mega",
 		megaEvolves: "Ampharos",
-		itemUser: ["Ampharos"],
+		itemUser: ["Ampharos", "ampharos"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -299,7 +299,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 617,
 		megaStone: "Audino-Mega",
 		megaEvolves: "Audino",
-		itemUser: ["Audino"],
+		itemUser: ["Audino", "audino"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -339,7 +339,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 582,
 		megaStone: "Banette-Mega",
 		megaEvolves: "Banette",
-		itemUser: ["Banette"],
+		itemUser: ["Banette", "banette"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -361,7 +361,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 628,
 		megaStone: "Beedrill-Mega",
 		megaEvolves: "Beedrill",
-		itemUser: ["Beedrill"],
+		itemUser: ["Beedrill", "beedrill"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -504,7 +504,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 583,
 		megaStone: "Blastoise-Mega",
 		megaEvolves: "Blastoise",
-		itemUser: ["Blastoise"],
+		itemUser: ["Blastoise", "blastoise"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -518,7 +518,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 584,
 		megaStone: "Blaziken-Mega",
 		megaEvolves: "Blaziken",
-		itemUser: ["Blaziken"],
+		itemUser: ["Blaziken", "blaziken"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -663,7 +663,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 625,
 		megaStone: "Camerupt-Mega",
 		megaEvolves: "Camerupt",
-		itemUser: ["Camerupt"],
+		itemUser: ["Camerupt", "camerupt"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -711,7 +711,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 585,
 		megaStone: "Charizard-Mega-X",
 		megaEvolves: "Charizard",
-		itemUser: ["Charizard"],
+		itemUser: ["Charizard", "charizard"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -725,7 +725,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 586,
 		megaStone: "Charizard-Mega-Y",
 		megaEvolves: "Charizard",
-		itemUser: ["Charizard"],
+		itemUser: ["Charizard", "charizard"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -1225,7 +1225,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 624,
 		megaStone: "Diancie-Mega",
 		megaEvolves: "Diancie",
-		itemUser: ["Diancie"],
+		itemUser: ["Diancie", "diancie"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2077,7 +2077,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 616,
 		megaStone: "Gallade-Mega",
 		megaEvolves: "Gallade",
-		itemUser: ["Gallade"],
+		itemUser: ["Gallade", "gallade"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2111,7 +2111,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 589,
 		megaStone: "Garchomp-Mega",
 		megaEvolves: "Garchomp",
-		itemUser: ["Garchomp"],
+		itemUser: ["Garchomp", "garchomp"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2125,7 +2125,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 587,
 		megaStone: "Gardevoir-Mega",
 		megaEvolves: "Gardevoir",
-		itemUser: ["Gardevoir"],
+		itemUser: ["Gardevoir", "gardevoir"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2139,7 +2139,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 588,
 		megaStone: "Gengar-Mega",
 		megaEvolves: "Gengar",
-		itemUser: ["Gengar"],
+		itemUser: ["Gengar", "gengar"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2197,7 +2197,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 623,
 		megaStone: "Glalie-Mega",
 		megaEvolves: "Glalie",
-		itemUser: ["Glalie"],
+		itemUser: ["Glalie", "glalie"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2391,7 +2391,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 589,
 		megaStone: "Gyarados-Mega",
 		megaEvolves: "Gyarados",
-		itemUser: ["Gyarados"],
+		itemUser: ["Gyarados", "gyarados"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2494,7 +2494,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 590,
 		megaStone: "Heracross-Mega",
 		megaEvolves: "Heracross",
-		itemUser: ["Heracross"],
+		itemUser: ["Heracross", "heracross"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2521,7 +2521,7 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		spritenum: 591,
 		megaStone: "Houndoom-Mega",
 		megaEvolves: "Houndoom",
-		itemUser: ["Houndoom"],
+		itemUser: ["Houndoom", "houndoom"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
