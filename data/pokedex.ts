@@ -9417,7 +9417,7 @@ let BattlePokedex = {
 		species: "Reuniclus",
 		types: ["Psychic"],
 		baseStats: {hp: 110, atk: 65, def: 75, spa: 125, spd: 85, spe: 30},
-		abilities: {0: "Overcoat", 1: "Magic Guard", H: "Regenerator"},
+		abilities: {0: "Mitosis", 1: "Magic Guard", H: "Regenerator"},
 		heightm: 1,
 		weightkg: 20.1,
 		color: "Green",
