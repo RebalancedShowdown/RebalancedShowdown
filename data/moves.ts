@@ -1102,7 +1102,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 			chance: 100,
 			status: 'brn',
 		},
-		secondary: null,
 		target: "normal",
 		type: "Flying",
 		contestType: "Tough",
