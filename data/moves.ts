@@ -1092,30 +1092,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-		desc: "If the user is hit by a contact move this turn before it can execute this move, the attacker is burned.",
-		shortDesc: "Burns on contact with the user before it moves.",
-		isNonstandard: 'Past',
+		desc: "100% chance to burn the target.",
+		shortDesc: "100% chance to burn the target",
 		name: "Beak Blast",
 		pp: 15,
-		priority: -3,
+		priority: 0,
 		flags: {bullet: 1, protect: 1},
-		beforeTurnCallback(pokemon) {
-			pokemon.addVolatile('beakblast');
-		},
-		effect: {
-			duration: 1,
-			onStart(pokemon) {
-				this.add('-singleturn', pokemon, 'move: Beak Blast');
-			},
-			onHit(pokemon, source, move) {
-				if (move.flags['contact']) {
-					source.trySetStatus('brn', pokemon);
-				}
-			},
-		},
-		// FIXME: onMoveAborted(pokemon) {pokemon.removeVolatile('beakblast')},
-		onAfterMove(pokemon) {
-			pokemon.removeVolatile('beakblast');
+		secondary: {
+			chance: 100,
+			status: 'brn',
 		},
 		secondary: null,
 		target: "normal",
