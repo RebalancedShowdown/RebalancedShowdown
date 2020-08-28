@@ -7452,10 +7452,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 						pokemon.removeVolatile('skydrop');
 						pokemon.removeVolatile('twoturnmove');
 					}
-					if (pokemon.volatiles['magnetrise']) {
-						applies = true;
-						delete pokemon.volatiles['magnetrise'];
-					}
 					if (pokemon.volatiles['telekinesis']) {
 						applies = true;
 						delete pokemon.volatiles['telekinesis'];
@@ -10583,8 +10579,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pseudoWeather: 'magnetrise',
 		effect: {
 			duration: 5,
-			onStart(source) {
-				this.add('-fieldstart', 'move: Magnet Rise', '[of]' + source);
+			durationCallback(source, effect) {
+			if (source?.hasAbility('persistent')) {
+				this.add('-activate', source, 'ability: Persistent', effect);
+				return 7;
+			}
+			return 5;
+			},
+			onStart() {
+				this.add('-fieldstart', 'move: Magnet Rise');
 			},
 			onImmunity(type, pokemon) {
 				if (!pokemon.hasType('Steel') || !pokemon.hasType('Electric')) return;
@@ -10592,11 +10595,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 					if (type === 'Ground') return false;
 				}
 			},
-			onResidualOrder: 15,
-			onEnd(target) {
-				this.add('-end', 'move: Magnet Rise');
-			},
+			onResidualOrder: 22,
+			onEnd() {
+				this.add('-fieldend', 'move: Magnet Rise');
+			},	
 		},
+		secondary: null,
+		target: "all",
+		type: "Electric",
+		contestType: "Clever",
 	},
 	magnitude: {
 		num: 222,
