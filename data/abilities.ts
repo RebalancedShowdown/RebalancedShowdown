@@ -923,7 +923,7 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be burned.",
 		onDamagingHit(damage, target, source, move) {
 			if (move.flags['contact']) {
-				if (this.randomChance(3, 10)) {
+				if (target.getMoveHitData(move).typeMod < 0) {
 					source.trySetStatus('brn', target);
 				}
 			}
@@ -4369,10 +4369,13 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		num: 199,
 	},
 	watercompaction: {
-		shortDesc: "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
-		onDamagingHit(damage, target, source, move) {
-			if (move.type === 'Water') {
-				this.boost({def: 2});
+		shortDesc: "This Pokemon's Defense is raised 2 stages after it is hit by a Water-type move. Immune to Water.",
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				if (!this.boost({def: 2})) {
+					this.add('-immune', target, '[from] ability: Water Compaction');
+				}
+				return null;
 			}
 		},
 		name: "Water Compaction",
