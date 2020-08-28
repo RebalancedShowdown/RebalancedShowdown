@@ -20218,7 +20218,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {snatch: 1, heal: 1},
 		slotCondition: 'Wish',
-		condition: {
+		effect: {
 			duration: 2,
 			onStart(pokemon, source) {
 				this.effectData.hp = source.maxhp / 2;
@@ -20441,7 +20441,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 				return false;
 			}
 		},
-		condition: {
+		effect: {
 			noCopy: true, // doesn't get copied by Baton Pass
 			duration: 2,
 			onStart(target, source) {
