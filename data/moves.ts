@@ -16745,7 +16745,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	snipeshot: {
 		num: 745,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 80,
 		category: "Special",
 		desc: "Has a higher chance for a critical hit. This move cannot be redirected to a different target by any effect.",
 		shortDesc: "High critical hit ratio. Cannot be redirected.",
