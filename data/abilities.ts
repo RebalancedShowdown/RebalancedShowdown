@@ -3558,7 +3558,7 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		onModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).crit) {
 				this.debug('Sniper boost');
-				return this.chainModify(1.5);
+				return this.chainModify(3.0);
 			}
 		},
 		name: "Sniper",
