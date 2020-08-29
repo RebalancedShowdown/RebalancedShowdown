@@ -1085,12 +1085,15 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 			switch (type) {
 				case 'Fire':
 					this.field.setWeather('sunnyday');
+					if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
 					break;
 				case 'Water':
 					this.field.setWeather('raindance');
+					if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
 					break;
 				case 'Ice':
 					this.field.setWeather('hail');
+					if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
 					break;
 				case 'Electric':
 					this.field.setTerrain('electricterrain');
