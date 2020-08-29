@@ -4640,6 +4640,7 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		},
 		onBasePowerPriority: 7,
 		onBasePower(basePower, pokemon, target, move) {
+			this.add('-ability', pokemon, 'Mitosis');
 			if (move.multihitType === 'mitosis') return this.chainModify(0.67);
 		},
 		onSourceModifySecondaries(secondaries, target, source, move) {
