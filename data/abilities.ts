@@ -1105,7 +1105,7 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 					this.field.setTerrain('mistyterrain');
 					break;
 			}
-		}				
+		},				
 		onUpdate(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Castform' || pokemon.transformed) return;
 			let forme = null;
