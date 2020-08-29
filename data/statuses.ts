@@ -32,6 +32,10 @@ export const BattleStatuses: {[k: string]: PureEffectData} = {
 				return this.chainModify(0.5);
 			}
 		},
+		onModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			return accuracy * 4 / 3;
+		},
 	},
 	slp: {
 		name: 'slp',
