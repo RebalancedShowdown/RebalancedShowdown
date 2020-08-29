@@ -1012,8 +1012,8 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		onModifySpDPriority: 4,
-		onAllyModifySpD(spd, pokemon) {
+		onModifySpAPriority: 4,
+		onAllyModifySpA(spA, pokemon) {
 			if (this.effectData.target.baseSpecies.baseSpecies !== 'Cherrim') return;
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(1.5);
