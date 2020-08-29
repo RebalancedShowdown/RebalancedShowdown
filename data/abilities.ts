@@ -1,7 +1,7 @@
 /*
 
 Ratings and how they work:
-
+test
 -1: Detrimental
 	  An ability that severely harms the user.
 	ex. Defeatist, Slow Start
