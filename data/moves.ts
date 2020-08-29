@@ -244,7 +244,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1},
-		critRatio: 2,
 		secondary: null,
 		target: "any",
 		type: "Flying",
@@ -300,7 +299,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	aircutter: {
 		num: 314,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 75,
 		category: "Special",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio. Hits adjacent foes.",
@@ -679,7 +678,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	attackorder: {
 		num: 454,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -1380,7 +1379,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	blazekick: {
 		num: 299,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a 10% chance to lower evasidon and a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio. 10% chance to lower evasion.",
@@ -2961,7 +2960,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	crosschop: {
 		num: 238,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -2978,7 +2977,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	crosspoison: {
 		num: 440,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a 10% chance to poison the target and a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio. 10% chance to poison.",
@@ -4071,7 +4070,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	drillrun: {
 		num: 529,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -6025,7 +6024,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	frostbreath: {
 		num: 524,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 75,
 		category: "Special",
 		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
 		shortDesc: "Always results in a critical hit.",
@@ -9538,7 +9537,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	karatechop: {
 		num: 2,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 90,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -9547,7 +9546,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 25,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		critRatio: 2,
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -9793,7 +9791,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		critRatio: 2,
 		secondary: null,
 		target: "normal",
 		type: "Grass",
@@ -12428,7 +12425,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	nightslash: {
 		num: 400,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -14395,13 +14392,13 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	razorleaf: {
 		num: 75,
 		accuracy: 100,
-		basePower: 55,
+		basePower: 40,
 		category: "Physical",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio. Hits adjacent foes.",
+		desc: "Has a higher chance for a critical hit. +1 priority.",
+		shortDesc: "High critical hit ratio. Hits adjacent foes. +1 priority.",
 		name: "Razor Leaf",
 		pp: 25,
-		priority: 0,
+		priority: 1,
 		flags: {protect: 1, mirror: 1},
 		critRatio: 2,
 		secondary: null,
@@ -14433,26 +14430,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	razorwind: {
 		num: 13,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 40,
 		category: "Special",
-		desc: "Has a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges, then hits foe(s) turn 2. High crit ratio.",
+		desc: "This move has guaranteed crits, and is very likely to move first",
+		shortDesc: "Charges, then hits foe(s) turn 2. +1 priority.",
 		isNonstandard: "Past",
 		name: "Razor Wind",
 		pp: 10,
 		priority: 0,
 		flags: {charge: 1, protect: 1, mirror: 1},
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name, defender);
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
 		critRatio: 2,
 		secondary: null,
 		target: "allAdjacentFoes",
@@ -15689,7 +15675,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	shadowclaw: {
 		num: 421,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -16226,9 +16212,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	skyattack: {
 		num: 143,
 		accuracy: 100,
-		basePower: 140,
+		basePower: 40,
 		category: "Physical",
-		desc: "Has a 30% chance to flinch the target and a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+		desc: "Guaranteed crits. +1 priority.",
 		shortDesc: "Charges, then hits turn 2. 30% flinch. High crit.",
 		name: "Sky Attack",
 		pp: 5,
@@ -16420,7 +16406,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	slash: {
 		num: 163,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 75,
 		category: "Physical",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -16759,7 +16745,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	snipeshot: {
 		num: 745,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 50,
 		category: "Special",
 		desc: "Has a higher chance for a critical hit. This move cannot be redirected to a different target by any effect.",
 		shortDesc: "High critical hit ratio. Cannot be redirected.",
@@ -16956,7 +16942,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	spacialrend: {
 		num: 460,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 70,
 		category: "Special",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
@@ -17685,16 +17671,15 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 	},
 	stoneedge: {
 		num: 444,
-		accuracy: 90,
-		basePower: 100,
+		accuracy: 100,
+		basePower: 90,
 		category: "Physical",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio.",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect.",
 		name: "Stone Edge",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		critRatio: 2,
 		secondary: null,
 		target: "normal",
 		type: "Rock",
