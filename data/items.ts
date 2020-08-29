@@ -3089,20 +3089,20 @@ export const BattleItems: {[itemid: string]: ItemData} = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
-				return this.chainModify(2);
+			if (pokemon.baseSpecies.baseSpecies === 'Pikachu' || pokemon.baseSpecies.baseSpecies === 'Raichu') {
+				return this.chainModify(1.5);
 			}
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
-				return this.chainModify(2);
+			if (pokemon.baseSpecies.baseSpecies === 'Pikachu' || pokemon.baseSpecies.baseSpecies === 'Raichu') {
+				return this.chainModify(1.5);
 			}
 		},
-		itemUser: ["Pikachu"],
+		itemUser: ["Pikachu", "Raichu"],
 		num: 236,
 		gen: 2,
-		desc: "If held by a Pikachu, its Attack and Sp. Atk are doubled.",
+		desc: "If held by a Pikachu/Raichu, its Attack and Sp. Atk are multiplied by 1.5.",
 	},
 	lightclay: {
 		name: "Light Clay",
