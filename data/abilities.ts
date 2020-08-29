@@ -1080,20 +1080,30 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types.",
 		shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm.",
 		onPrepareHit(source, target, move) {
+			let forme = null;
 			if (move.hasBounced) return;
 			const type = move.type;
 			switch (type) {
 				case 'Fire':
 					this.field.setWeather('sunnyday');
-					if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
+					if (source.baseSpecies.baseSpecies !== 'Castform' || source.transformed) return;
+					if (source.species.id !== 'castformsunny') source.forme = 'Castform-Sunny';
+					if (target.baseSpecies.baseSpecies !== 'Castform' || target.transformed) return;
+					if (target.species.id !== 'castformsunny') target.forme = 'Castform-Sunny';
 					break;
 				case 'Water':
 					this.field.setWeather('raindance');
-					if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
+					if (source.baseSpecies.baseSpecies !== 'Castform' || source.transformed) return;
+					if (source.species.id !== 'castformrainy') source.forme = 'Castform-Rainy';
+					if (target.baseSpecies.baseSpecies !== 'Castform' || target.transformed) return;
+					if (target.species.id !== 'castformrainy') target.forme = 'Castform-Rainy';
 					break;
 				case 'Ice':
 					this.field.setWeather('hail');
-					if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
+					if (source.baseSpecies.baseSpecies !== 'Castform' || source.transformed) return;
+					if (source.species.id !== 'castformsnowy') source.forme = 'Castform-Snowy';
+					if (target.baseSpecies.baseSpecies !== 'Castform' || target.transformed) return;
+					if (target.species.id !== 'castformsnowy') target.forme = 'Castform-Snowy';
 					break;
 				case 'Electric':
 					this.field.setTerrain('electricterrain');
