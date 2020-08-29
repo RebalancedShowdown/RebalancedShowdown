@@ -1079,6 +1079,33 @@ export const BattleAbilities: {[abilityid: string]: AbilityData} = {
 	forecast: {
 		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types.",
 		shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm.",
+		onPrepareHit(source, target, move) {
+			if (move.hasBounced) return;
+			const type = move.type;
+			switch (type) {
+				case 'Fire':
+					this.field.setWeather('sunnyday');
+					break;
+				case 'Water':
+					this.field.setWeather('raindance');
+					break;
+				case 'Ice':
+					this.field.setWeather('hail');
+					break;
+				case 'Electric':
+					this.field.setTerrain('electricterrain');
+					break;
+				case 'Grass':
+					this.field.setTerrain('grassyterrain');
+					break;
+				case 'Psychic':
+					this.field.setTerrain('psychicterrain');
+					break;
+				case 'Fairy':
+					this.field.setTerrain('mistyterrain');
+					break;
+			}
+		}				
 		onUpdate(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Castform' || pokemon.transformed) return;
 			let forme = null;
