@@ -1470,10 +1470,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 20,
-			status: 'brn',
-		},
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
@@ -1507,7 +1503,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1},
 		secondary: {
 			chance: 30,
-			status: 'par',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Normal",
@@ -1547,10 +1545,6 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: {
-			chance: 20,
-			status: 'par',
-		},
 		target: "normal",
 		type: "Electric",
 		contestType: "Beautiful",
@@ -1669,7 +1663,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: {
 			chance: 30,
-			status: 'par',
+			boosts: {
+				evasion: -1
+			}
 		},
 		target: "any",
 		type: "Flying",
@@ -3568,8 +3564,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
-			status: 'par',
+			chance: 100,
+			onHit(target, source, move) {
+				if (source.hp * 2 < source.maxhp) {
+					target.trySetStatus('par', source, move);	
+				}
+			},
 		},
 		target: "allAdjacent",
 		type: "Electric",
@@ -3853,7 +3853,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			status: 'par',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Dragon",
@@ -7690,7 +7692,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			status: 'psn',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Poison",
@@ -9759,7 +9763,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			status: 'brn',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "allAdjacent",
 		type: "Fire",
@@ -13284,14 +13290,14 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 15,
 		category: "Physical",
-		desc: "Has a 30% chance to poison the target.",
-		shortDesc: "30% chance to poison the target.",
+		desc: "Poisons the target.",
+		shortDesc: "Poisons the target.",
 		name: "Poison Sting",
 		pp: 35,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 30,
+			chance: 100,
 			status: 'psn',
 		},
 		target: "normal",
@@ -16641,7 +16647,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
-			chance: 40,
+			chance: 100,
 			status: 'psn',
 		},
 		target: "normal",
@@ -16970,7 +16976,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
-			status: 'par',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Electric",
@@ -17451,8 +17459,12 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, defrost: 1},
 		thawsTarget: true,
 		secondary: {
-			chance: 30,
-			status: 'brn',
+			chance: 100,
+			onHit(target, source, move) {
+				if (source.hp * 2 < source.maxhp) {
+					target.trySetStatus('brn', source, move);	
+				}
+			},
 		},
 		target: "normal",
 		type: "Water",
@@ -18930,7 +18942,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		},
 		secondary: {
 			chance: 30,
-			status: 'par',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Electric",
@@ -18949,7 +18963,9 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,
-			status: 'par',
+			boosts: {
+				evasion: -1
+			},
 		},
 		target: "normal",
 		type: "Electric",
@@ -19461,7 +19477,7 @@ export const BattleMovedex: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		multihit: 2,
 		secondary: {
-			chance: 20,
+			chance: 50,
 			status: 'psn',
 		},
 		target: "normal",
